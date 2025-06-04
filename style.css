@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding:  0;
+    font-family: sans-serif;
+}
+
+body{
+    overflow-y: auto;
+    color: #f8f5f5;
+    /*background-image: linear-gradient(rgb(0, 1, 0, 0.5), rgba(0, 0, 0, 0.9)), url(background.jpg);*/
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.banner {
+    width: 110%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.content {
+    margin-top: 100vh; /* Push the main content below the fixed banner */
+}
+
+.profile-container {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    align-content: center;
+}
+.name{
+    color: #040404;
+    position: relative;
+    top:100px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 200px; /* Adjust the size of the profile picture */
+    border-radius: 50%; /* Makes the image circular */
+    border: 3px solid #ffffff55; /* Add a white border around the image */
+    position: relative;
+    left:15%;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.0em;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #040404;
+    /*font-size: 1.2em; /* Larger font size for icons */
+    transition: color 0.3s;
+    display: inline-flex;
+    align-items: center; /* Align icon and text */
+    gap: 10px; /* Space between icon and text */
+}
+
+.contact-info a:hover {
+    color: #ff7f50; /* Change color when hovered */
+}
+
+.contact-info i {
+    font-size: 1.0em; /* Larger icons */
+}
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-items: flex-end;
+    width: 40%;
+    background-image: linear-gradient(rgb(0, 1, 0, 0.5), rgba(0, 0, 0, 0.9)), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-left: 70%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-right: 10%;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #050505;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+    color: #ff7f50;
+    transition: color 0.3s ease;
+}
+.center-content {
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.expertise {
+    position: absolute;
+    top: 77%;
+    left: 5%;
+    text-align: justify;
+    max-width: 28%;
+}
+
+.center-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #070606;
+    
+}
+
+.center-content p {
+    font-size: 1.2em;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #010101;
+    text-align: justify
+}
+
+/* Portfolio */
+.Research{
+    padding: 60px 60px;
+    background-color: rgba(237, 240, 243, 0.8); /* Slightly transparent dark background */
+    /*color: #fff; /* Text color for the figures */
+    display: flex; /* Enable flexbox for horizontal alignment */
+    justify-content: center; /* Center the figures horizontally */
+    gap: 20px; /* Add space between the figures */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    line-height: 1.5;
+}
+
+/*.mystory {
+    margin-top: 10%;
+    padding: 40px 50px;
+    background-color: rgba(237, 240, 243, 0.8); /* Slightly transparent dark background */
+    /*color: #fff; /* Text color for the figures */
+    /*display: flex; /* Enable flexbox for horizontal alignment */
+    /*justify-content: center; /* Center the figures horizontally */
+    /*gap: 20px; /* Add space between the figures */
+    /*flex-wrap: wrap;}
+
+*/
+
+.publications {
+    margin-top: 10%;
+    padding: 40px 50px;
+    background-color: rgba(237, 240, 243, 0.8); /* Slightly transparent dark background */
+    /*color: #fff; /* Text color for the figures */
+    display: flex; /* Enable flexbox for horizontal alignment */
+    justify-content: center; /* Center the figures horizontally */
+    gap: 20px; /* Add space between the figures */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+.font p {
+    text-align: justify;
+}
+
+.custom-link {
+    color: #103c6b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.custom-link:hover {
+    color: #ff7f50;
+    text-decoration: underline;
+}
+
+.figures-section {
+    padding: 50px 20px;
+    background-color: rgba(237, 240, 243, 0.8); /* Slightly transparent dark background */
+    /*color: #fff; /* Text color for the figures */
+    display: flex; /* Enable flexbox for horizontal alignment */
+    justify-content: center; /* Center the figures horizontally */
+    gap: 20px; /* Add space between the figures */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    align-items: center;
+}
+
+.figures-crc {
+    display: flex; /* Enable flexbox */
+    justify-content: left; /* Center horizontally */
+    align-content: left; /* Center vertically */
+    /*height: 100vh; /* Make the container take the full height of the viewport */
+    gap: 20px; /* Add space between the figures */
+    padding-left: 1%;
+}
+
+
+.figure {
+    flex: 1 1 30%; /* Each figure takes up about 30% of the container width */
+    max-width: 400px; /* Set a max width for the figures */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.figure img {
+    width: 100%; /* Make the images responsive */
+    border: 2px solid #ccc; /* Add a border to the images */
+    border-radius: 10px; /* Rounded corners for the images */
+}
+
+.figure p {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #180202fd;;
+}
+.font{
+    color: #180202fd;
+}
+
+
+.figures-crc {
+    display: flex; /* Enable flexbox */
+    justify-content: left; /* Center horizontally */
+    align-content: left; /* Center vertically */
+    /*height: 100vh; /* Make the container take the full height of the viewport */
+    gap: 20px; /* Add space between the figures */
+    padding-left: 1%;
+}
+
+.column1 {
+float: left;
+width: 24.5%;
+padding: 10px;
+
+padding-left: 5%;
+color: #180202fd;
+align-items: center;
+text-align: center;
+}
+
+.column1 img {
+margin-top: 12px;
+border: 2px solid #ccc; /* Add a border to the images */
+border-radius: 10px; /* Rounded corners for the images */
+}
+
+.column2 {
+float: left;
+width: 30%;
+padding: 10px;
+
+color: #180202fd;
+align-items: center;
+text-align: center;
+}
+
+.column2 img {
+margin-top: 12px;
+border: 2px solid #ccc; /* Add a border to the images */
+border-radius: 10px; /* Rounded corners for the images */
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}

@@ -1,0 +1,343 @@
+<html>
+    <head>
+        <title> Sajani Vithana </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <div class="banner" id="home">
+            <!-- Profile Picture Container -->
+            <div class="profile-container">
+                <img src="pic1.jpg" class="profile-pic">
+                <div class="name">
+                     <h1>sajani vithana</h1> 
+                    <br><br><br>
+                    <p> Postdoctoral Fellow at Harvard University</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Cambridge, MA</p> 
+                        <p><a href="mailto:sajani@seas.harvard.edu" target="_blank"><i class="fas fa-envelope"></i> Email</a></p>
+                        <p><a href="https://scholar.google.com/citations?user=_hSfZbMAAAAJ&hl=en&oi=ao" target="_blank"><i class="fas fa-book"></i> Google Scholar</a></p>
+                        <p><a href="https://www.linkedin.com/in/sajanivithana/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Center Content -->
+            <div class="center-content">
+                <p>I am a Postdoctoral Fellow at Harvard, mentored by Prof. Flavio Calmon. I completed my PhD in Electrical and Computer Engineering at the University of Maryland in 2023 under the guidance of Prof. Sennur Ulukus. Prior to that, I completed my undergraduate studies in Electrical and Electronics Engineering at the University of Peradeniya, Sri Lanka.
+                </p>
+                <br>
+                <p> My research centers on establishing the theoretical foundations of trustworthy ML/AI. I design information-theoretic frameworks to systematically analyze the fundamental trade-offs between system performance and key trustworthiness dimensions such as data privacy, algorithmic fairness, and system reliability across ML/AI components. Leveraging principles from coding theory, optimization, signal processing, probability, and statistics, I construct algorithms that form the building blocks of reliable and ethical ML/AI systems. </p>
+
+            </div>
+            <!--<div class="expertise">
+                <h3> Areas of Expertise</h2>
+                    <br>
+                <p>
+                    Aerodynamics, Aeroacoustics, CFD, Rotorcraft Design, Machine Learning, Structures, Fluid-Structure Interactions, Aeroelasticity, Numerical Methods, Dynamics and Controls. 
+                </p>
+
+            </div> -->
+            <!-- Navbar -->
+            <div class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#port">Research</a></li>
+                    <li><a href="#pubs">Publications</a></li>
+                    <!--<li><a href="#story">My Story </a></li>-->
+                </ul>
+            </div>
+            <!--
+            <div class="profile-container">
+                <img src="pic1.jpg" class="profile-pic">
+                
+                <div class="name">
+                    <h1>Sajani Vithana</h1>
+                </div>
+            </div>
+        -->
+        </div>
+
+         <!-- Portfolio -->
+         <div class="Research" id="port">
+            <div class="font">
+                <h1> Research</h1>
+                <br>
+                <h2> CorDP-DME: Correlated Privacy Mechanisms for Differentially Private Distributed Mean Estimation</h2>
+                <br>
+                <p> Differentially private distributed mean estimation (DP-DME) is a key component in private federated learning. DP-DME (with \(n\) distributed users) traditionally employs either local DP (LDP) or central DP (CDP), achieving MSEs of \(O(1/n)\) and \(O(1/n^2)\), respectively. CDP attains a lower MSE by relying on a trusted party. Cryptographic protocols such as <em>secure aggregation</em> have been integrated into DP-DME systems to achieve CDP-level MSE without a trusted party. 
+                    However, they result in multiple-round protocols and involve significant communication and computational overhead. We propose CorDP-DME, an alternative DP-DME mechanism that is based on an information-theoretic framework that uses optimally correlated Gaussian noise, and effectively navigates the trade-off between privacy, accuracy and robustness, bridging the gap between LDP and CDP error bounds. CorDP-DME:
+                    <ul>
+                    <li>is a single-round protocol</li>
+                    <li> requires no trusted party</li>
+                    <li> achieves significantly improved accuracy compared to LDP</li>
+                    <li> incurs substantially lower communication and computational costs and increased resilience against dropouts and colluding users compared to secure aggregation.</li>
+                    </ul>
+                    <br>Papers:</br>
+            <ul>
+             <li> <a href="https://ieeexplore.ieee.org/abstract/document/10992360" target="_blank" class="custom-link" rel="noopener noreferrer">Correlated Privacy Mechanisms for Differentially Private Distributed Mean Estimation</a>. 
+             
+            </ul>
+            </p>
+                    </div>
+                <!--
+                    <br>
+            <div class="figure">
+                <img src="hub_drive.gif" alt="Figure 1">
+                <p>Conventional ducted rotor</p>
+            </div>
+            <div class="figure">
+                <img src="tip_drive.gif" alt="Figure 2">
+                <p>Tip-driven ducted rotor</p>
+            </div>
+                -->
+            <div class="font">
+                <br>
+                <h2> Multi-Group Proportional Representation in Database Retrieval and Text-to-Image Generation</h2>
+                <br>
+                <p> In image retrieval and text-to-image generation, ensuring well-represented results for user queries is essential to avoid representational harms—instances where certain groups, individuals, or traits are misrepresented or excluded due to biases in data or model behavior. These biases can perpetuate stereotypes, result in unfair outcomes, and marginalize underrepresented communities.
+                    While prior research has explored fairness by enforcing equal or proportional representation across individual attributes such as race or gender, less attention has been given to intersectional groups, which are defined by combinations of multiple attributes (e.g., race and gender together).
+                    Our work addresses this gap by developing tools to measure and mitigate representational harms in both image retrieval and text-to-image generation. Specifically, we:
+                    <ul>
+                        <li>Introduce Multi-Group Proportional Representation (MPR), a theoretically grounded metric for measuring intersectional group representation</li>
+                        <li> Propose Multi-Group Aware Proportional Retrieval (MAPR), an image retrieval algorithm that improves both fairness and accuracy, outperforming existing fair retrieval approaches</li>
+                        <li> Conduct a comprehensive analysis of representational gaps in current text-to-image generation models, and propose a method to mitigate these disparities.</li>
+                         </ul>
+                     </p>
+                     <br>Papers:</br>
+            <ul>
+             <li> <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/d00fcdd0629dabdf515b1e6425a261bb-Paper-Conference.pdf" target="_blank" class="custom-link" rel="noopener noreferrer">Multi-Group Proportional Representation in Retrieval</a>. 
+             
+            </ul>
+            </p>
+    
+            </div>
+            <!--
+            <br>
+            <div class="figures-crc">
+                <div class="figure">
+                    <br><br><br>
+                    <img src="crc_geo.jpg" alt="Figure 1"  >
+                    <p>CRC-20 aircraft</p>
+                </div>
+                <div class="figure">
+                    <img src="crc_hover.gif" alt="Figure 2" >
+                    <p> Vorticity iso-surfaces in hover</p>
+                </div>
+                <div class="figure">
+                    <br><br><br><br>
+                    <img src="crc_ff_2.gif" alt="Figure 2" >
+                    <p> Vorticity iso-surfaces in forward flight</p>
+                </div>
+            </div>
+-->
+            <div class="font">
+                <br>
+                <h2> Private Applroximate Nearest neighbor Search for Vector Database Querying</h2>
+                <br>
+                <p> 
+                    Vector databases have become increasingly popular in ML/AI applications such as retrieval-augmented generation (RAG) and recommendation systems. They store high-dimensional embeddings of text, images, or video data and enable efficient retrieval by converting user queries into vector embeddings and ranking results based on similarity.
+                    Given the scale—often millions of entries—they rely on approximate nearest neighbor (ANN) search techniques for fast retrieval.
+                    In this work, we propose a novel method for performing ANN search while ensuring perfect privacy of user queries, effectively extending the classical notion of private information retrieval to the setting of vector databases.
+                    We introduce an information-theoretic formulation of the private ANN problem and present a scheme based on Reed-Solomon codes that guarantees perfect privacy without sacrificing the accuracy of the underlying non-private ANN algorithm.
+                    Our approach achieves lower communication costs compared to existing cryptographic protocols for private ANN search.</p>
+            
+
+            <br> </br>
+            <br>Paper:</br>
+            <ul>
+             <li> <a href="https://ieeexplore.ieee.org/abstract/document/10619146" target="_blank" class="custom-link" rel="noopener noreferrer">Private Approximate Nearest Neighbor Search for Vector Database Querying</a>. 
+             
+            </ul>
+            </p>
+        </div>
+        <!--
+            <br>
+            <div class="figures-crc">
+                <div class="figure">
+                    <br><br>
+                    <img src="Propeller_wake.png" alt="Figure 1"  >
+                    <p>Vorticity iso-surfaces</p>
+                </div>
+                <div class="figure">
+                    <br>
+                    <img src="wingmovie_top.gif" alt="Figure 2" >
+                    <p> Surface pressure fluctuations</p>
+                </div>
+                <div class="figure">
+                    <img src="prop00_1.png" alt="Figure 2" >
+                    <p> Noise footprint of propeller</p>
+                </div>
+                <div class="figure">
+                    <img src="wing00_1.png" alt="Figure 2" >
+                    <p> Noise footprint of wing</p>
+                </div>
+            </div>
+            -->
+            
+            <div class="font">
+                <br>
+                <h2> PRUW: <i>Private Read-Update-Write</i> for Efficient Federated Learning with Perfect Information-theoretic Privacy</h2>
+                <br>
+                <p> 
+                    Private-Read-Update-Write (PRUW) is an information-theoretic framework that enables users to privately download (read) and update (write) sections of a data storage system without revealing the values of the updates or the sections accessed, while ensuring perfect accuracy. PRUW has applications in efficient variants of federated learning (FL) such as federated submodel learning (FSL) and FL with gradient sparsification. In FSL, the users only download and update sections of the model that can be updated by their limited data types, which reduces communication and computation costs; however, the accessed sections and update values can still disclose users' private information. Similarly, in FL with sparsification, users transmit only the most significant \(r\) fraction of updates, with the indices and values potentially revealing sensitive information. PRUW addresses these concerns by using coding theoretic tools that perfectly hides the values and the indices of the downloaded and updated information while maintaining perfect accuracy.
+                    We propose two variants: 
+                    <ul>
+                        <li> structured PRUW, where the FL model is divided into pre-determined sections (as in FSL)
+                        <li> unstructured PRUW, where the selected content has no specific structure (as in the top \(r\) updates selected in gradient sparsification).
+                    </ul>
+                    For both, We develop coding schemes using the properties of Lagrange polynomials and Cauchy-Vandermonde matrices, along with concepts from <it>coded computing</it> and <it>private information retrieval (PIR)</it> to achieve perfect privacy and accuracy. We show that the asymptotic communication cost of PRUW can be as low as twice that of the corresponding non-private read-write operations. 
+                    Additionally, we provide the following extensions of basic PRUW:   
+                    <ul>
+                        <li> Relaxing the perfect privacy and accuracy conditions in PRUW to characterize the rate-distortion and rate-privacy-storage trade-offs with corresponding achievable schemes.
+                        <li> PRUW schemes that are applicable to servers with arbitrary storage constraints.
+                             </ul>
+
+                             <br> </br>
+                             <br>Papers:</br>
+                             <ul>
+                              <li> <a href="https://ieeexplore.ieee.org/abstract/document/10172221" target="_blank" class="custom-link" rel="noopener noreferrer">Private Read Update Write (PRUW) in Federated Submodel Learning (FSL): Communication Efficient Schemes With and Without Sparsification</a>. 
+                              <li> <a href="https://ieeexplore.ieee.org/abstract/document/10354031" target="_blank" class="custom-link" rel="noopener noreferrer">Private Read-Update-Write With Controllable Information Leakage for Storage-Efficient Federated Learning With Top r Sparsification</a>. 
+                                <li> <a href="https://ieeexplore.ieee.org/abstract/document/10521588" target="_blank" class="custom-link" rel="noopener noreferrer">Information-Theoretically Private Federated Submodel Learning With Storage Constrained Databases</a>. 
+                        
+                             </ul>
+                        </p>
+            </div>
+            <!--
+            <br>
+            <div class="figures-crc">
+                <div class="figure">
+                    <img src="trans.gif" alt="Figure 1"  >
+                    <p>Variation of noise footprint with propeller transition</p>
+                </div>
+                
+            </div>
+            -->
+           
+            <div class="font">
+                <br>
+                <h2> Private Information Retrieval</h2>
+                <br>
+                <p> 
+                    Private information retrieval (PIR) has been widely studied in information theory to obtain the fundamental communication rates in perfectly private database retrieval. In PIR, a user downloads a required file from a database system that stores multiple files, without revealing what was downloaded.
+                    We introduced and analyzed the following variants of PIR:
+                    <ul>
+                        <li> Semantic PIR, which broadens the scope of classical PIR by incorporating files with arbitrary lengths and retrieval probabilities. By deriving the capacity of semantic PIR, we demonstrated that semantic PIR always outperforms classical PIR. Our findings highlight the benefits of leveraging the natural differences in files to improve the communication rate, as opposed to adhering strictly to the classical PIR model.
+                            <li> Quantum PIR, which considers quantum communication channels instead of classical channels in PIR to improve the communication rates by a factor of two. 
+                                 </ul>
+                    
+                     <br> </br>
+                    <br>Papers:</br>
+                    <ul>
+                     <li> <a href="https://ieeexplore.ieee.org/abstract/document/9656116" target="_blank" class="custom-link" rel="noopener noreferrer">Semantic Private Information Retrieval</a>. 
+                     <li> <a href="https://ieeexplore.ieee.org/abstract/document/10274814" target="_blank" class="custom-link" rel="noopener noreferrer">Private Information Retrieval and Its Extensions: An Introduction, Open Problems, Future Directions</a>. 
+                        <li> <a href="https://ieeexplore.ieee.org/abstract/document/10929727" target="_blank" class="custom-link" rel="noopener noreferrer">Quantum X-Secure E-Eavesdropped T-Colluding Symmetric Private Information Retrieval</a>. 
+               
+                    </ul>
+                    </p>
+            </div>
+            
+        </div>
+
+
+        <div class="publications" id="pubs">
+            <div class="font">
+                <h1> Publications</h1>
+                <br>
+                <br>
+                <h2> Jorunal Papers</h2>
+                <br>
+                <br>    
+                <ol>
+                    <li> A. Aytekin, M. Nomeir, S. Vithana and S. Ulukus, "Quantum X-Secure E-Eavesdropped T-Colluding Symmetric Private Information Retrieval," in IEEE Transactions on Information Theory, vol. 71(5):3974-3988, May 2025.</li>                        
+                    <li> S. Vithana and S. Ulukus. Information-Theoretically Private Federated Submodel Learning with Storage Constrained Databases, in IEEE Transactions on Information Theory, 70(8):6041–6059, August 2024.</li>
+                    <li> S. Vithana and S. Ulukus. Private Read-Update-Write with Controllable Information Leakage for Storage-Efficient Federated Learning with Top $r$ Sparsification, IEEE Transactions on Information Theory, 70(5):3669-3692, May 2024.</li>
+                     <li>   S. Vithana and S. Ulukus. Deceptive Information Retrieval, in Entropy, 26(3):244, March 2024.</li>
+                     <li>   S. Vithana and S. Ulukus. Private Read Update Write (PRUW) in Federated Submodel Learning (FSL): Communication Efficient Schemes With and Without Sparsification, IEEE Transactions on Information Theory, 70(2):1320-1348, February 2024.</li>
+                     <li>   S. Vithana, Z. Wang and S. Ulukus. Private Information Retrieval and Its Applications: An Introduction, Open Problems, Future Directions, in IEEE BITS Magazine, 2023.</li>
+                     <li>   S. Vithana, K. Banawan, and S. Ulukus. Semantic Private Information Retrieval, in IEEE Transactions on Information Theory, 68(4):2635–2652, April 2022.</li>
+                     <li>   S. Vithana, M. Ekanayake, H. Ekanayake, A. Rathnayake, G. Jayatilaka, V. Herath, R. Godaliyadda and P. Ekanayake, Adaptive Hierarchical Clustering for Hyperspectral Image Classification: Umbrella Clustering, In Journal of Spectral Imaging, 8(a11), July 2019.</li>
+                     <li>   S. Vithana, R. Abeysekara, S. Oorloff, A. Rupasinghe, V. Herath, R. Godaliyadda, P. Ekanayake, Comparison of Two Algorithms for Land Cover Mapping Based on Hyperspectral Imagery, International Journal on Advances in ICT for Emerging Regions, 11(1), July 2018.</li>
+                      </ol>
+                      <br>
+                <br>
+                <h2> Conference Papers</h2>
+                <br>
+                <br>  
+                <ol>      
+                <li>S. Vithana, V. Cadambe, F. Calmon, and H. Jeong. "Differentially Private Distributed Mean Estimation with Constrained User Correlations". IEEE International Symposium on Information Theory (ISIT), 2025 (accepted).</li>
+                <li> S. Jung, A. Oesterling, C. M. Verdun, S. Vithana, T. Moon, and F. P. Calmon. ``Multi-Group Proportional Representation for Text-to-Image Models". Conference on Computer Vision and Pattern Recognition (CVPR), 2025 (accepted).</li>
+                <li> S. Vithana, V. R. Cadambe, F. P. Calmon, H, Jeong. ``Correlated Privacy Mechanisms for Differentially Private Distributed Mean Estimation". IEEE Conference on Secure and Trustworthy Machine Learning (SaTML), 2025.</li>
+
+                <li> A. Oesterling, C. Verdun, C. Long, A. Glynn, L. Paes, S. Vithana, M. Cardone, F. P. Calmon ``Multi-Group Proportional Representation", The Thirty-Eighth Annual Conference on Neural Information Processing Systems (NeurIPS), December 2024.</li>
+                <li> S. Jung, A. Oesterling, C. M. Verdun, S. Vithana, T. Moon, and F. P. Calmon. ``Measuring Representational Harms in Image Generation with a Multi-Group Proportional Metric", In NeurIPS Workshop on Algorithmic Fairness Through the Lens of Metrics and Evaluation, December 2024.</li>
+                <li>S. Vithana, M. Cardone and F.P. Calmon. ``Private Approximate Nearest Neighbor Search for Vector Database Querying", in IEEE International Symposium on Information theory (ISIT), July 2024.</li>
+                <li> M. Nomeir, S. Vithana, S. Ulukus, ``Asymmetric X-Secure T-Private Information Retrieval: More Databases is not Always Better", In 58th Annual Conference on Information Sciences and Systems (CISS), March 2024.</li>
+<li> A. Aytekin, M. Nomeir, S. Vithana, S. Ulukus, ``Quantum Symmetric Private Information Retrieval with Secure Storage and Eavesdroppers", In IEEE GLOBECOM Workshops, December 2023.</li>
+<li> M. Nomeir,S. Vithana, S. Ulukus, ``Private Membership Aggregation", In IEEE Military Communications Conference (MILCOM), October 2023.</li>
+<li>S. Vithana and S. Ulukus. ``Private Read Update Write (PRUW) with Heterogeneous Databases", in IEEE International Symposium on Information theory (ISIT), June 2023.</li>
+<li>S. Vithana and S. Ulukus. ``Rate-Privacy-Storage Trade off in Federated Learning with Top $r$ Sparsification", in IEEE International Conference on Communications (ICC), May 2023. (Best Paper Award)</li>
+<li> S. Vithana and S. Ulukus. ``Model Segmentation for Storage Efficient Private Federated Learning with Top $r$  Sparsification", in Conference on Information Sciences and Systems (CISS), March 2023.</li>
+ <li>S. Vithana and S. Ulukus. ``Private Federated Submodel Learning with Sparsification", in IEEE Information Theory Workshop (ITW), November 2022.</li>
+ <li>S. Vithana and S. Ulukus. ``Rate Distortion Trade off in Private Read Update Write in Federated Submodel Learning", in Asilomar Conference on Signals, Systems and Computers, October 2022.</li>
+ <li>S. Vithana and S. Ulukus. ``Private Read Update Write (PRUW) with Storage Constrained Databases", in IEEE International Symposium on Information theory (ISIT), June 2022.</li>
+ <li>S. Vithana and S. Ulukus. ``Efficient Private Federated Submodel Learning", in IEEE International Conference on Communications (ICC), May 2022.</li>
+ <li>S. Vithana, K. Banawan, and S. Ulukus. ``Semantic Private Information Retrieval from MDS Coded Databases", in IEEE International Symposium on Information theory (ISIT), July 2021.</li>
+<li>S. Vithana, K. Banawan, and S. Ulukus. ``Semantic Private Information Retrieval: Effects of Heterogeneous Message Sizes and Popularities", in IEEE Global Communications Conference (GLOBECOM), December 2020.</li>
+<li> M. Ekanayake, H. Ekanayake, A. Rathnayake, S. Vithana, V. Herath, R. Godaliyadda, MPB Ekanayake, ``A Semi-Supervised Algorithm to Map Major Vegetation Zones Using Satellite Hyperspectral Data", In 9th Workshop on Hyperspectral Image and Signal Processing: Evolution in Remote Sensing (WHISPERS), September 2018.</li>
+<li> S. Oorloff, R. Abeysekara, S. Vithana, A. Rupasinghe, V. Herath, R. Godaliyadda, P. Ekanayake, ``Spectral-Spatial Hybrid Mechanism for Feature Detection Using Spectral Correlation", In IEEE International Conference on Industrial and Information Systems (ICIIS), December 2017.</li>
+<li>S. Vithana, R. Abeysekara, S. Oorloff, A. Rupasinghe, V. Herath, R. Godaliyadda, P. Ekanayake. ``Hyperspectral Imaging Based Land Cover Mapping Using Data Obtained by the Hyperion Sensor", in Seventeenth International Conference on Advances in ICT for Emerging Regions (\textbf{IEEE ICTer}), September 2017. (Best Paper Award)</li>
+</ol>
+            </div>
+            
+        </div>
+<!--
+
+        <div class="mystory" id="story">
+            <div class="font">
+                <h1> My Story</h1>
+                <br>
+                <p>
+                    I grew up in Sri Lanka, a beautiful island often called the "Pearl of the Indian Ocean." My love for math and science began at a young age and eventually led me to pursue a bachelor’s degree in civil engineering at the University of Peradeniya. 
+                    During my time there, I discovered a passion for aerodynamics, particularly through my final-year research project on wind loads on tall buildings, guided by Prof. Kushan Wijesundara. Inspired by binge-watching Mayday: Air Crash Investigations, I developed a deep interest in aeronautics and decided to pursue higher studies in the United States.
+                    <br><br>
+                    In 2018, I joined the Computational Fluid Dynamics (CFD) Research Lab at the University of Maryland, where I was fortunate to work under the mentorship of Prof. James Baeder. 
+                    After completing my PhD in 2023, I began my professional journey with Maglev Aero, a cutting-edge company developing electric propulsion systems powered by magnetic levitation.
+                    <br><br></ber>
+                    During my years in Maryland, I also embraced photography, capturing memories as I explored much of the U.S. with friends. Here are some of the pictures from those travels—each one holds a cherished memory that I will treasure forever.        
+                </p>
+                
+               
+            </div>
+            
+            
+            <div class="figures-crc"> 
+                <div class="column1">
+                    <img src="grinnel.jpg" style="width:100%">
+                    <p> <br> Upper Grinnell Lake, Montana</p>
+                </div>
+                <div class="column2">
+                    <img src="outerbanks2.jpeg" style="width:100%">
+                    <p> <br>  Outer Banks, North Carolina </p>
+                    <br>
+                    <img src="sealions2.jpeg" style="width:100%">
+                    <p> <br>  Seward, Alaska  </p>
+                </div>            
+                <div class="column2">
+                    <img src="lava.jpeg" style="width:100%">
+                    <p> <br> Kīlauea volcano, Hawaii</p>
+                    <br>
+                    <img src="liberty.jpeg" style="width:100%">
+                    <p> <br> Statue of Liberty</p>
+                </div>
+            </div>
+        
+        </div>
+
+        -->
+    
+    
+
+   
+    </body>
+</html>
