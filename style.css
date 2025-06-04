@@ -80,7 +80,7 @@ body{
     align-items: center;
     justify-items: flex-end;
     width: 40%;
-    background-image: linear-gradient(rgb(0, 1, 0, 0.5), rgba(0, 0, 0, 0.9)), url(background.jpg);
+    background-color: #ffffff
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
