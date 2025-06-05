@@ -7,6 +7,7 @@
 body{
     overflow-y: auto;
     color: #f8f5f5;
+    background-color: rgba(0, 0, 255, 0.7); /* Semi-transparent blue */
     /*background-image: linear-gradient(rgb(0, 1, 0, 0.5), rgba(0, 0, 0, 0.9)), url(background.jpg);*/
     background-size: cover;
     background-position: center;
