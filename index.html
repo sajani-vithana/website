@@ -70,7 +70,7 @@
                 <br>How can we distinguish between AI-generated and human-written text? One effective approach is through watermarking LLM outputs. Watermarking works by subtly altering the model’s next-token predictions in a way that remains imperceptible to users but can be detected by a verifier who holds a secret key. We frame this watermarking process as an optimization problem: finding the "optimal perturbation" to the token distribution according to a fixed score function that is accessible only with the secret key. For binary score functions, this reduces to a classic distance-maximizing code design problem in coding theory, followed by an optimal transport problem. We also extend the analysis to non-binary scores and derive a new watermarking scheme that outperforms existing watermarks, which is based on scores drawn from heavy-tailed distributions. The main contributions of this work are:  <ul>
                     <li>Providing a generalized information-theoretic framework for analyzing watermakrs, which includes many of the existing watermarks as special cases</li>
                     <li> Providing the optimal watermark with binary scores (SimplexWater) that maximizes detection with zero distortion 
-                    </li>Establishing conditions under which a watermark based on arbitrary scores maximizes detection, and introducing the HeavyWater watermark, which outperforms all existing approaches.</li>
+                    <li>Establishing conditions under which a watermark based on arbitrary scores maximizes detection, and introducing the HeavyWater watermark, which outperforms all existing approaches.</li>
                  </ul>
                     <br>Paper:</br>
             <ul>
