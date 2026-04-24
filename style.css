@@ -75,20 +75,18 @@ body{
 
 .navbar {
     position: fixed;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-items: flex-end;
-    width: 40%;
-    background-color: #f0f0f0
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding-left: 70%;
-    padding-bottom: 2%;
-    padding-top: 2%;
-    padding-right: 10%;
+    justify-content: flex-end;
+    background-color: rgba(16, 60, 107, 0.92);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px 40px;
+    box-sizing: border-box;
+    z-index: 100;
 }
 
 .navbar ul {
@@ -100,17 +98,20 @@ body{
 }
 
 .navbar ul li {
-    margin: 0 30px;
+    margin: 0 22px;
 }
 
 .navbar ul li a {
     text-decoration: none;
-    color: #050505;
+    color: #f4f6fa;
     text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-size: 0.92em;
+    font-weight: 500;
 }
 
 .navbar ul li a:hover {
-    color: #ff7f50;
+    color: #ffb99c;
     transition: color 0.3s ease;
 }
 .center-content {
