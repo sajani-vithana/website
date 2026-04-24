@@ -82,8 +82,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: rgba(16, 60, 107, 0.92);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #103c6b;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
     padding: 16px 40px;
     box-sizing: border-box;
     z-index: 100;
