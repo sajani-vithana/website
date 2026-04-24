@@ -63,7 +63,31 @@
          <div class="Research" id="port">
             <div class="font">
                 <h1> Research</h1>
-                
+
+
+        <div class="font">
+                <br>
+                <h2> On Optimal Domain-Aware Privacy Mechanisms for Synthetic Data Generation</h2>
+                <br>
+                <p> Differential privacy (DP) imposes fundamental trade-offs between privacy and statistical fidelity in synthetic data generation. While access to public data has been shown to improve these trade-offs empirically, existing approaches exploit public data only indirectly &mdash; through pre-processing (e.g., using pre-trained generative models) or post-processing steps (e.g., matching target statistics estimated from public datasets) &mdash; while relying on domain-agnostic DP mechanisms. In this work, we lay the theoretical framework to study the principled incorporation of public data into DP mechanisms themselves. We introduce <b>PubMix</b>, a public-data-aware DP mechanism that can be used in histogram-based data synthesis pipelines.</p>
+        </div>
+
+        <div class="font">
+                <br>
+                <h2> ArcMark: Multi-bit Information Embedding in LLM Outputs</h2>
+                <br>
+                <p> Watermarking is a key tool for the responsible use of language models (LMs): it inserts a detectable signal into generated text, either to flag LM-generated output (zero-bit watermarking) or to embed richer messages (multi-bit watermarking). Existing multi-bit schemes largely extend zero-bit design principles &mdash; typically encoding at most one bit per token &mdash; and the information-theoretic capacity of the multi-bit watermarking channel has remained unknown. In this work, we:</p>
+                <ul>
+                    <li>Derive the first capacity characterization for multi-bit watermarks that preserve average next-token predictions.</li>
+                    <li>Introduce <b>ArcMark</b>, a coding-theoretic watermark construction that, under mild assumptions, achieves the capacity of the multi-bit watermark channel.</li>
+                    <li>Demonstrate empirically that ArcMark outperforms existing multi-bit watermarks in both bit rate per token and detection accuracy.</li>
+                </ul>
+                <p>This framing casts LM watermarking as a fundamental channel coding problem, paving the way for principled coding-theoretic approaches to watermark design.</p>
+                <br>Paper:</br>
+                <ul>
+                    <li> <a href="https://arxiv.org/pdf/2602.07235" target="_blank" class="custom-link" rel="noopener noreferrer">ArcMark: Multi-bit LLM Watermark via Optimal Transport</a>.
+                </ul>
+        </div>
 
         <div class="font">
                 <br>
