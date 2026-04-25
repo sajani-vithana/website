@@ -366,6 +366,21 @@ clear: both;
     margin-bottom: 6px;
 }
 
+.pub-title-link {
+    color: inherit;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 0.25s ease, color 0.25s ease;
+}
+
+.pub-title-link:hover {
+    color: #103c6b;
+    background-size: 100% 1px;
+}
+
 .pub-authors {
     font-size: 0.95em;
     line-height: 1.45;
