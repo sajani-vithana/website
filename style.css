@@ -165,7 +165,7 @@ em { font-style: italic; }
 }
 @keyframes ping { from { opacity: .8; transform: scale(.6); } to { opacity: 0; transform: scale(1.8); } }
 
-#vision-wheel { width: 100%; max-width: 500px; height: auto; overflow: visible; }
+#vision-wheel { width: 100%; max-width: 410px; height: auto; overflow: visible; margin: 6px 0 18px; }
 #vision-wheel .sector { cursor: pointer; transition: transform .35s cubic-bezier(.2,.8,.2,1), opacity .3s; outline: none; }
 #vision-wheel .sector path.wedge { transition: filter .3s; }
 #vision-wheel.has-active .sector { opacity: .38; }
@@ -184,7 +184,7 @@ em { font-style: italic; }
 @keyframes breathe { 50% { transform: scale(1.06); opacity: .1; } }
 
 .vision-panel {
-    width: 100%; max-width: 500px; min-height: 150px; margin-top: 0;
+    width: 100%; max-width: 460px; min-height: 150px; margin-top: 0;
     background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
     border-top: 4px solid var(--pc, var(--accent));
     box-shadow: var(--shadow); padding: 16px 20px;

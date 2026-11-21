@@ -100,7 +100,7 @@ function buildWheel() {
         el('path', { class: 'wedge', d: wedgePath(a0, a1), fill: `url(#${gid})` }, g);
 
         // icon + label
-        const [lx, ly] = polar((RI + RO) / 2, mid);
+        const [lx, ly] = polar((RI + RO) / 2 + 10, mid);
         const shift = (t.lines.length - 2) * 9;
         const icon = el('text', { class: 'sector-icon', x: lx, y: ly - 14 - shift, 'text-anchor': 'middle' }, g);
         icon.textContent = t.icon;
