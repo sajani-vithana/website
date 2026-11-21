@@ -1,559 +1,550 @@
-<html>
-    <head>
-        <title> Sajani Vithana </title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    </head>
-    <body>
-        <!-- Navbar (outside banner so its stacking is independent) -->
-        <div class="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#port">Research</a></li>
-                <li><a href="#pubs">Publications</a></li>
-                <li><a href="#teaching">Teaching</a></li>
-            </ul>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sajani Vithana</title>
+    <meta name="description" content="Sajani Vithana — information-theoretic and statistical foundations for reliable, trustworthy, and responsible AI.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.documentElement.classList.add('js');
+        window.MathJax = { tex: { inlineMath: [['\\(', '\\)']] }, svg: { fontCache: 'global' } };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
 
-        <div class="banner" id="home">
-            <!-- Profile Picture Container -->
-            <div class="profile-container">
-                <img src="pic1.jpg" class="profile-pic">
-                <div class="name">
-                     <h1>Sajani Vithana</h1> 
-                    <br><br><br>
-                    <p> Postdoctoral Fellow at Harvard University</p>
-                    <div class="contact-info">
-                        <p><i class="fas fa-map-marker-alt"></i> Cambridge, MA</p> 
-                        <p><a href="mailto:sajani@seas.harvard.edu" target="_blank"><i class="fas fa-envelope"></i> Email</a></p>
-                        <p><a href="https://scholar.google.com/citations?user=_hSfZbMAAAAJ&hl=en&oi=ao" target="_blank"><i class="fas fa-book"></i> Google Scholar</a></p>
-                        <p><a href="https://www.linkedin.com/in/sajanivithana/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Center Content -->
-            <div class="center-content">
-                <p>I am a Postdoctoral Fellow at Harvard, mentored by Prof. Flavio Calmon. I completed my PhD in Electrical and Computer Engineering at the University of Maryland under the guidance of Prof. Sennur Ulukus. Prior to that, I completed my undergraduate studies in Electrical and Electronics Engineering at the University of Peradeniya, Sri Lanka.
-                </p>
-                <br>
-                <p> My research centers on establishing the theoretical foundations of trustworthy AI. I design information-theoretic frameworks to systematically analyze the fundamental trade-offs between system performance and key trustworthiness dimensions such as data privacy, algorithmic fairness, and reliability across AI system components. Leveraging principles from coding theory, optimization, signal processing, probability, and statistics, I construct algorithms that form the building blocks of trustworthy and responsible AI systems. </p>
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+    <a href="#home" class="nav-brand">S<span>V</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#approach">Approach</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#pubs">Publications</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+        </ul>
+    </nav>
+</header>
 
-            </div>
-            <!--<div class="expertise">
-                <h3> Areas of Expertise</h2>
-                    <br>
-                <p>
-                    Aerodynamics, Aeroacoustics, CFD, Rotorcraft Design, Machine Learning, Structures, Fluid-Structure Interactions, Aeroelasticity, Numerical Methods, Dynamics and Controls. 
-                </p>
-
-            </div> -->
-            <!--
-            <div class="profile-container">
-                <img src="pic1.jpg" class="profile-pic">
-                
-                <div class="name">
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+    <div class="hero-inner">
+        <div class="hero-text">
+            <div class="hero-id">
+                <img src="pic1.jpg" alt="Sajani Vithana" class="avatar">
+                <div>
+                    <p class="eyebrow">Research Associate · Harvard SEAS</p>
                     <h1>Sajani Vithana</h1>
                 </div>
             </div>
-        -->
-        </div>
 
-         <!-- Portfolio -->
-         <div class="Research" id="port">
-            <div class="font">
-                <h1> Research</h1>
-
-
-        <div class="font">
-                <br>
-                <h2> PubMix: Towards Optimal Domain-Aware Privacy Mechanisms for Synthetic Data Generation</h2>
-                <br>
-                <p> Differentially private (DP) synthetic data generation is becoming increasingly important for building large-scale data-driven systems that protect user privacy. Although access to public data has been shown to improve the privacy-utility trade-off in synthetic data generation empirically, existing approaches leverage public data only indirectly, through pre-processing (e.g., using pre-trained generative models) or post-processing steps (e.g., matching target statistics estimated from public datasets), while relying on domain-agnostic DP mechanisms. In this work, we lay the theoretical framework to study the principled incorporation of public data into DP mechanisms themselves, in an optimal manner. We introduce <b>PubMix</b>, a public-data-aware DP mechanism that can be used in histogram-based data synthesis pipelines.</p>
-                <br>
-                <p><a href="pubmix.pdf" target="_blank" class="custom-link" rel="noopener noreferrer">Optimal Domain-Aware Privacy Mechanisms for Synthetic Data Generation</a></p>
-        </div>
-
-        <div class="font">
-                <br>
-                <h2> HeavyWater and SimplexWater: LLM Watermarking</h2>
-                <br>How can we distinguish between AI-generated and human-written text? One effective approach is through watermarking LLM outputs. Watermarking works by subtly altering the model’s next-token predictions in a way that remains imperceptible to users but can be detected by a verifier who holds a secret key. We frame this watermarking process as an optimization problem: finding the "optimal perturbation" to the token distribution according to a fixed score function that is accessible only with the secret key. For binary score functions, this reduces to a classic distance-maximizing code design problem in coding theory, followed by an optimal transport problem. We also extend the analysis to non-binary scores and derive a new watermarking scheme that outperforms existing watermarks, which is based on scores drawn from heavy-tailed distributions. The main contributions of this work are:  <ul>
-                    <li>Providing a generalized information-theoretic framework for analyzing watermakrs, which includes many of the existing watermarks as special cases</li>
-                    <li> Providing the optimal watermark with binary scores (SimplexWater) that maximizes detection with zero distortion
-                    <li>Establishing conditions under which a watermark based on arbitrary scores maximizes detection, and introducing the HeavyWater watermark, which outperforms all existing approaches.</li>
-                 </ul>
-                    <br>Paper:</br>
-            <ul>
-             <li> <a href="https://arxiv.org/pdf/2506.06409" target="_blank" class="custom-link" rel="noopener noreferrer">HeavyWater and SimplexWater: Watermarking Low-Entropy Text Distributions</a>.
-
-            </ul>
+            <p class="lede">I work on the <em>information-theoretic foundations</em> of reliable and trustworthy AI.</p>
+            <p class="hero-bio">
+                AI models are noisy, stochastic components. Engineers have spent decades making communication networks, storage and navigation dependable despite noise and imperfect parts. I bring those tools (information theory, coding theory, statistics and optimization) to AI, to find what is fundamentally achievable and design algorithms that reach it.
             </p>
-                    </div>
 
-        <div class="font">
-                <br>
-                <h2> ArcMark: Multi-bit Information Embedding in LLM Outputs</h2>
-                <br>
-                <p> Can LLMs communicate with each other without humans knowing? Or can we embed metadata, such as who generated a text, and when or where it was produced, directly into LLM outputs? Both questions point to the same challenge: encoding multiple bits of information in generated text while preserving natural language quality. We model this as a communication channel design problem between the hidden message generator and the detector, draw on ideas from information theory and coding theory, and develop efficient methods for multi-bit watermarking. In this work, we characterize the maximum number of bits that can be embedded per token, and introduce <b>ArcMark</b>, a multi-bit watermark construction that outperforms existing methods.</p>
-                <br>Paper:</br>
-                <ul>
-                    <li> <a href="https://arxiv.org/pdf/2602.07235" target="_blank" class="custom-link" rel="noopener noreferrer">ArcMark: Multi-bit LLM Watermark via Optimal Transport</a>.
-                </ul>
+            <div class="hero-links">
+                <a class="btn" href="mailto:sajani@seas.harvard.edu"><i class="fas fa-envelope"></i> Email</a>
+                <a class="btn" href="https://scholar.google.com/citations?user=_hSfZbMAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap"></i> Scholar</a>
+                <a class="btn" href="https://www.linkedin.com/in/sajanivithana/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a class="btn btn-primary" href="cv.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-lines"></i> CV</a>
+            </div>
         </div>
 
-                <br>
-                <h2> CorDP-DME: Correlated Privacy Mechanisms for Differentially Private Distributed Mean Estimation</h2>
-                <br>
-                <p> Differentially private distributed mean estimation (DP-DME) is a key component in private federated learning. DP-DME (with \(n\) distributed users) traditionally employs either local DP (LDP) or central DP (CDP), achieving MSEs of \(O(1/n)\) and \(O(1/n^2)\), respectively. CDP attains a lower MSE by relying on a trusted party. Cryptographic protocols such as <em>secure aggregation</em> have been integrated into DP-DME systems to achieve CDP-level MSE without a trusted party. 
-                    However, they result in multiple-round protocols and involve significant communication and computational overhead. We propose CorDP-DME, an alternative DP-DME mechanism that is based on an information-theoretic framework that uses optimally correlated Gaussian noise, and effectively navigates the trade-off between privacy, accuracy and robustness, bridging the gap between LDP and CDP error bounds. CorDP-DME:
-                    <ul>
-                    <li>is a single-round protocol</li>
-                    <li> requires no trusted party</li>
-                    <li> achieves significantly improved accuracy compared to LDP</li>
-                    <li> incurs substantially lower communication and computational costs and increased resilience against dropouts and colluding users compared to secure aggregation.</li>
+        <!-- Research vision wheel -->
+        <div class="vision" id="vision">
+            <p class="vision-caption">Research vision. Hover or tap a thrust.</p>
+            <svg id="vision-wheel" viewBox="0 0 640 640" role="img" aria-label="Research vision: five thrusts around reliable, trustworthy and responsible AI"></svg>
+            <div class="vision-panel" id="vision-panel" aria-live="polite"></div>
+        </div>
+    </div>
+    <a href="#approach" class="scroll-cue" aria-label="Scroll down"><i class="fas fa-chevron-down"></i></a>
+</section>
+
+<!-- ============ APPROACH ============ -->
+<section class="approach" id="approach">
+    <div class="wrap">
+        <p class="kicker">The approach</p>
+        <h2 class="section-title">Rigor over heuristics.</h2>
+        <p class="section-lede">
+            The usual way to make AI more reliable is to scale up data and models and check the results empirically. That approach gives no provable guarantees. Many reliable and trustworthy-AI problems are information-theoretic and statistical problems at the core. I analyze what is mathematically <em>possible</em> and what is <em>impossible</em>, and let those limits guide algorithm design.
+        </p>
+        <div class="translate-grid">
+            <div class="translate reveal">
+                <span class="t-plain">Detecting a watermark</span>
+                <span class="t-arrow"><i class="fas fa-arrow-right-long"></i></span>
+                <span class="t-math">is a hypothesis test</span>
+            </div>
+            <div class="translate reveal">
+                <span class="t-plain">Getting reliable answers from unreliable models</span>
+                <span class="t-arrow"><i class="fas fa-arrow-right-long"></i></span>
+                <span class="t-math">is a sequential decision problem</span>
+            </div>
+            <div class="translate reveal">
+                <span class="t-plain">Privacy</span>
+                <span class="t-arrow"><i class="fas fa-arrow-right-long"></i></span>
+                <span class="t-math">is a bound on information leakage</span>
+            </div>
+            <div class="translate reveal">
+                <span class="t-plain">Evaluating a model</span>
+                <span class="t-arrow"><i class="fas fa-arrow-right-long"></i></span>
+                <span class="t-math">is a search for failures with few, noisy tests</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ RESEARCH ============ -->
+<section class="research" id="research">
+    <div class="wrap">
+        <p class="kicker">Research</p>
+        <h2 class="section-title">Five connected thrusts.</h2>
+        <p class="section-lede">Each thrust pairs a fundamental question with algorithms that come provably close to the limits it reveals.</p>
+
+        <!-- ---------- 1. Reliability ---------- -->
+        <article class="thrust" id="thrust-reliability" style="--c: var(--c-rel); --c-soft: var(--c-rel-soft)">
+            <header class="thrust-head">
+                <span class="thrust-num">01</span>
+                <div>
+                    <h3><i class="fas fa-diagram-project"></i> AI Reliability</h3>
+                    <p class="thrust-q">How can we build reliable AI systems from unreliable models, at the lowest possible cost?</p>
+                </div>
+            </header>
+            <p class="thrust-intro">
+                In the 1950s, von Neumann, and Moore and Shannon, showed that reliable machines can be built from unreliable components by arranging them with redundancy. We apply the same idea to LLMs. Each model, together with its prompt, is a <em>noisy measurement instrument</em>. Reliable prediction then becomes the design of a <em>circuit</em> of instruments: which to query, in what order, and when to stop.
+            </p>
+
+            <div class="cards">
+                <div class="card reveal">
+                    <div class="card-top"><h4>LMCircuit</h4><span class="tag tag-new">New</span></div>
+                    <p>Routing, cascading and majority voting are all special cases of circuits of LLM classifiers. We formulate circuit design as a Markov decision process, so the optimal circuit is the solution of a dynamic program, and we derive the best accuracy achievable under a given cost budget. LMCircuit learns this circuit from data and improves the cost–accuracy frontier over state-of-the-art routing and cascading methods.</p>
+                    <figure class="fig">
+                        <img src="figs/circuits.png" alt="Majority voting, routing, cascade and a general circuit of LLM classifiers" loading="lazy">
+                        <figcaption>Majority voting, routing and cascades are all special cases of a general circuit of LLM classifiers.</figcaption>
+                    </figure>
+                    <div class="insight">
+                        <div><b>Stochastic errors</b>: the same model gives different answers to the same prompt. Repeated or correlated queries reduce them.</div>
+                        <div><b>Systematic errors</b>: the model is consistently wrong on a prompt. Only decorrelated instruments (different prompts or different models) reduce them.</div>
+                    </div>
+                    <ul class="paper-links">
+                        <li><a href="https://arxiv.org/abs/2610.30076" target="_blank" rel="noopener noreferrer"><i class="far fa-file-pdf"></i> Circuits of LLM Classifiers</a></li>
                     </ul>
-                    <br>Papers:</br>
-            <ul>
-             <li> <a href="https://ieeexplore.ieee.org/abstract/document/10992360" target="_blank" class="custom-link" rel="noopener noreferrer">Correlated Privacy Mechanisms for Differentially Private Distributed Mean Estimation</a>. 
-             
-            </ul>
-            </p>
-                    </div>
-                
+                </div>
+            </div>
+        </article>
 
-             
-                <!--
-                    <br>
-            <div class="figure">
-                <img src="hub_drive.gif" alt="Figure 1">
-                <p>Conventional ducted rotor</p>
-            </div>
-            <div class="figure">
-                <img src="tip_drive.gif" alt="Figure 2">
-                <p>Tip-driven ducted rotor</p>
-            </div>
-                -->
-            <div class="font">
-                <br>
-                <h2> Multi-Group Proportional Representation in Database Retrieval and Text-to-Image Generation</h2>
-                <br>
-                <p> In image retrieval and text-to-image generation, ensuring well-represented results for user queries is essential to avoid representational harms—instances where certain groups, individuals, or traits are misrepresented or excluded due to biases in data or model behavior. These biases can perpetuate stereotypes, result in unfair outcomes, and marginalize underrepresented communities.
-                    While prior research has explored fairness by enforcing equal or proportional representation across individual attributes such as race or gender, less attention has been given to intersectional groups, which are defined by combinations of multiple attributes (e.g., race and gender together).
-                    Our work addresses this gap by developing tools to measure and mitigate representational harms in both image retrieval and text-to-image generation. Specifically, we:
-                    <ul>
-                        <li>Introduce Multi-Group Proportional Representation (MPR), a theoretically grounded metric for measuring intersectional group representation</li>
-                        <li> Propose Multi-Group Aware Proportional Retrieval (MAPR), an image retrieval algorithm that improves both fairness and accuracy, outperforming existing fair retrieval approaches</li>
-                        <li> Conduct a comprehensive analysis of representational gaps in current text-to-image generation models, and propose a method to mitigate these disparities.</li>
-                         </ul>
-                     </p>
-                     <br>Papers:</br>
-            <ul>
-             <li> <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/d00fcdd0629dabdf515b1e6425a261bb-Paper-Conference.pdf" target="_blank" class="custom-link" rel="noopener noreferrer">Multi-Group Proportional Representation in Retrieval</a>. 
-             <li> <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Jung_Multi-Group_Proportional_Representations_for_Text-to-Image_Models_CVPR_2025_paper.pdf" target="_blank" class="custom-link" rel="noopener noreferrer">Multi-Group Proportional Representation for Text-to-Image Models</a>. 
-             
-            </ul>
+        <!-- ---------- 2. Accountability ---------- -->
+        <article class="thrust" id="thrust-accountability" style="--c: var(--c-acc); --c-soft: var(--c-acc-soft)">
+            <header class="thrust-head">
+                <span class="thrust-num">02</span>
+                <div>
+                    <h3><i class="fas fa-fingerprint"></i> AI Accountability</h3>
+                    <p class="thrust-q">Can we trace AI-generated content back to its source without degrading it, and stop agents from hiding messages in it?</p>
+                </div>
+            </header>
+            <p class="thrust-intro">
+                We treat LLM watermarking as a <em>hidden communication channel</em> between the model and a verifier, with the secret key acting as shared randomness. Seen this way, information theory and coding theory tell us how much can be embedded in generated text without changing its quality. The same view also exposes a new threat: AI agents talking to each other covertly.
             </p>
-    
-            </div>
-            <!--
-            <br>
-            <div class="figures-crc">
-                <div class="figure">
-                    <br><br><br>
-                    <img src="crc_geo.jpg" alt="Figure 1"  >
-                    <p>CRC-20 aircraft</p>
-                </div>
-                <div class="figure">
-                    <img src="crc_hover.gif" alt="Figure 2" >
-                    <p> Vorticity iso-surfaces in hover</p>
-                </div>
-                <div class="figure">
-                    <br><br><br><br>
-                    <img src="crc_ff_2.gif" alt="Figure 2" >
-                    <p> Vorticity iso-surfaces in forward flight</p>
-                </div>
-            </div>
--->
-            <div class="font">
-                <br>
-                <h2> Private Applroximate Nearest neighbor Search for Vector Database Querying</h2>
-                <br>
-                <p> 
-                    Vector databases have become increasingly popular in ML/AI applications such as retrieval-augmented generation (RAG) and recommendation systems. They store high-dimensional embeddings of text, images, or video data and enable efficient retrieval by converting user queries into vector embeddings and ranking results based on similarity.
-                    Given the scale—often millions of entries—they rely on approximate nearest neighbor (ANN) search techniques for fast retrieval.
-                    In this work, we propose a novel method for performing ANN search while ensuring perfect privacy of user queries, effectively extending the classical notion of private information retrieval to the setting of vector databases.
-                    We introduce an information-theoretic formulation of the private ANN problem and present a scheme based on Reed-Solomon codes that guarantees perfect privacy without sacrificing the accuracy of the underlying non-private ANN algorithm.
-                    Our approach achieves lower communication costs compared to existing cryptographic protocols for private ANN search.</p>
-            
+            <figure class="fig fig-wide">
+                <img src="figs/watermark.png" alt="Watermarker LLM sends text X; verifier with secret key S detects the watermark, ordinary reader does not" loading="lazy">
+                <figcaption>The verifier detects the watermark using the secret key. An ordinary reader, who sees only the text, cannot, because text quality is preserved.</figcaption>
+            </figure>
 
-            <br> </br>
-            <br>Paper:</br>
-            <ul>
-             <li> <a href="https://ieeexplore.ieee.org/abstract/document/10619146" target="_blank" class="custom-link" rel="noopener noreferrer">Private Approximate Nearest Neighbor Search for Vector Database Querying</a>. 
-             
-            </ul>
-            </p>
-        </div>
-        <!--
-            <br>
-            <div class="figures-crc">
-                <div class="figure">
-                    <br><br>
-                    <img src="Propeller_wake.png" alt="Figure 1"  >
-                    <p>Vorticity iso-surfaces</p>
-                </div>
-                <div class="figure">
-                    <br>
-                    <img src="wingmovie_top.gif" alt="Figure 2" >
-                    <p> Surface pressure fluctuations</p>
-                </div>
-                <div class="figure">
-                    <img src="prop00_1.png" alt="Figure 2" >
-                    <p> Noise footprint of propeller</p>
-                </div>
-                <div class="figure">
-                    <img src="wing00_1.png" alt="Figure 2" >
-                    <p> Noise footprint of wing</p>
-                </div>
-            </div>
-            -->
-            
-            <div class="font">
-                <br>
-                <h2> PRUW: <i>Private Read-Update-Write</i> for Efficient Federated Learning with Perfect Information-theoretic Privacy</h2>
-                <br>
-                <p> 
-                    Private-Read-Update-Write (PRUW) is an information-theoretic framework that enables users to privately download (read) and update (write) sections of a data storage system without revealing the values of the updates or the sections accessed, while ensuring perfect accuracy. PRUW has applications in efficient variants of federated learning (FL) such as federated submodel learning (FSL) and FL with gradient sparsification. In FSL, the users only download and update sections of the model that can be updated by their limited data types, which reduces communication and computation costs; however, the accessed sections and update values can still disclose users' private information. Similarly, in FL with sparsification, users transmit only the most significant \(r\) fraction of updates, with the indices and values potentially revealing sensitive information. PRUW addresses these concerns by using coding theoretic tools that perfectly hides the values and the indices of the downloaded and updated information while maintaining perfect accuracy.
-                    We propose two variants: 
-                    <ul>
-                        <li> structured PRUW, where the FL model is divided into pre-determined sections (as in FSL)
-                        <li> unstructured PRUW, where the selected content has no specific structure (as in the top \(r\) updates selected in gradient sparsification).
+            <div class="cards">
+                <div class="card reveal">
+                    <div class="card-top"><h4>SimplexWater &amp; HeavyWater</h4><span class="tag">NeurIPS 2025</span></div>
+                    <p>Single-bit watermarks that provably preserve text quality and achieve state-of-the-art detection. An optimal-transport coupling between each next-token distribution and the secret key keeps the output distribution unchanged, so only the key holder can detect the watermark. SimplexWater comes from the binary simplex code and is provably optimal within its class. HeavyWater has the best detection in practice.</p>
+                    <p class="impact"><i class="fas fa-bolt"></i> Its optimal-transport approach is used in <a href="https://cdn.openai.com/pdf/e9508624-d767-41b6-a26d-e34ca798ada6/textgrain-entropy-calibrated-watermarking-for-language-model-text.pdf" target="_blank" rel="noopener noreferrer">OpenAI's deployed watermark</a>.</p>
+                    <ul class="paper-links">
+                        <li><a href="https://arxiv.org/pdf/2506.06409" target="_blank" rel="noopener noreferrer"><i class="far fa-file-pdf"></i> HeavyWater and SimplexWater: Watermarking Low-Entropy Text Distributions</a></li>
                     </ul>
-                    For both, We develop coding schemes using the properties of Lagrange polynomials and Cauchy-Vandermonde matrices, along with concepts from <it>coded computing</it> and <it>private information retrieval (PIR)</it> to achieve perfect privacy and accuracy. We show that the asymptotic communication cost of PRUW can be as low as twice that of the corresponding non-private read-write operations. 
-                    Additionally, we provide the following extensions of basic PRUW:   
-                    <ul>
-                        <li> Relaxing the perfect privacy and accuracy conditions in PRUW to characterize the rate-distortion and rate-privacy-storage trade-offs with corresponding achievable schemes.
-                        <li> PRUW schemes that are applicable to servers with arbitrary storage constraints.
-                             </ul>
-
-                             <br> </br>
-                             <br>Papers:</br>
-                             <ul>
-                              <li> <a href="https://ieeexplore.ieee.org/abstract/document/10172221" target="_blank" class="custom-link" rel="noopener noreferrer">Private Read Update Write (PRUW) in Federated Submodel Learning (FSL): Communication Efficient Schemes With and Without Sparsification</a>. 
-                              <li> <a href="https://ieeexplore.ieee.org/abstract/document/10354031" target="_blank" class="custom-link" rel="noopener noreferrer">Private Read-Update-Write With Controllable Information Leakage for Storage-Efficient Federated Learning With Top r Sparsification</a>. 
-                                <li> <a href="https://ieeexplore.ieee.org/abstract/document/10521588" target="_blank" class="custom-link" rel="noopener noreferrer">Information-Theoretically Private Federated Submodel Learning With Storage Constrained Databases</a>. 
-                        
-                             </ul>
-                        </p>
-            </div>
-            <!--
-            <br>
-            <div class="figures-crc">
-                <div class="figure">
-                    <img src="trans.gif" alt="Figure 1"  >
-                    <p>Variation of noise footprint with propeller transition</p>
                 </div>
-                
-            </div>
-            -->
-           
-            <div class="font">
-                <br>
-                <h2> Private Information Retrieval</h2>
-                <br>
-                <p> 
-                    Private information retrieval (PIR) has been widely studied in information theory to obtain the fundamental communication rates in perfectly private database retrieval. In PIR, a user downloads a required file from a database system that stores multiple files, without revealing what was downloaded.
-                    We introduced and analyzed the following variants of PIR:
-                    <ul>
-                        <li> Semantic PIR, which broadens the scope of classical PIR by incorporating files with arbitrary lengths and retrieval probabilities. By deriving the capacity of semantic PIR, we demonstrated that semantic PIR always outperforms classical PIR. Our findings highlight the benefits of leveraging the natural differences in files to improve the communication rate, as opposed to adhering strictly to the classical PIR model.
-                            <li> Quantum PIR, which considers quantum communication channels instead of classical channels in PIR to improve the communication rates by a factor of two. 
-                                 </ul>
-                    
-                     <br> </br>
-                    <br>Papers:</br>
-                    <ul>
-                     <li> <a href="https://ieeexplore.ieee.org/abstract/document/9656116" target="_blank" class="custom-link" rel="noopener noreferrer">Semantic Private Information Retrieval</a>. 
-                     <li> <a href="https://ieeexplore.ieee.org/abstract/document/10274814" target="_blank" class="custom-link" rel="noopener noreferrer">Private Information Retrieval and Its Extensions: An Introduction, Open Problems, Future Directions</a>. 
-                        <li> <a href="https://ieeexplore.ieee.org/abstract/document/10929727" target="_blank" class="custom-link" rel="noopener noreferrer">Quantum X-Secure E-Eavesdropped T-Colluding Symmetric Private Information Retrieval</a>. 
-               
+                <div class="card reveal">
+                    <div class="card-top"><h4>ArcMark</h4><span class="tag">NeurIPS 2026</span></div>
+                    <p>Multi-bit watermarking embeds a full message, such as a user ID, the model version, or even the prompt. We cast distortion-free multi-bit watermarking as channel coding with side information and derive its <em>capacity</em>, the fundamental limit on how much can be embedded. ArcMark approaches this limit in some cases and reliably embeds several bytes in a few hundred tokens.</p>
+                    <ul class="paper-links">
+                        <li><a href="https://arxiv.org/abs/2602.07235" target="_blank" rel="noopener noreferrer"><i class="far fa-file-pdf"></i> ArcMark: Distortion-Free Multi-Byte LLM Watermark via Optimal Transport</a></li>
                     </ul>
-                    </p>
-            </div>
-            
-        </div>
-
-
-        <div class="publications" id="pubs">
-            <div class="font pub-wrap">
-                <h1>Publications</h1>
-                <p class="pub-note">See my <a href="https://scholar.google.com/citations?user=_hSfZbMAAAAJ&hl=en&oi=ao" target="_blank" class="custom-link">Google Scholar</a> for the most up-to-date list.</p>
-
-                <h2 class="pub-section-title">Journal Papers</h2>
-                <div class="pub-list">
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10929727" target="_blank" rel="noopener noreferrer" class="pub-title-link">Quantum X-Secure E-Eavesdropped T-Colluding Symmetric Private Information Retrieval</a></div>
-                        <div class="pub-authors">A. Aytekin, M. Nomeir, <strong>S. Vithana</strong>, and S. Ulukus</div>
-                        <div class="pub-venue"><em>IEEE Transactions on Information Theory</em>, vol. 71(5):3974&ndash;3988 <span class="pub-year">May 2025</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10521588" target="_blank" rel="noopener noreferrer" class="pub-title-link">Information-Theoretically Private Federated Submodel Learning with Storage Constrained Databases</a></div>
-                        <div class="pub-authors"><strong>S. Vithana</strong> and S. Ulukus</div>
-                        <div class="pub-venue"><em>IEEE Transactions on Information Theory</em>, vol. 70(8):6041&ndash;6059 <span class="pub-year">August 2024</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10354031" target="_blank" rel="noopener noreferrer" class="pub-title-link">Private Read-Update-Write with Controllable Information Leakage for Storage-Efficient Federated Learning with Top \(r\) Sparsification</a></div>
-                        <div class="pub-authors"><strong>S. Vithana</strong> and S. Ulukus</div>
-                        <div class="pub-venue"><em>IEEE Transactions on Information Theory</em>, vol. 70(5):3669&ndash;3692 <span class="pub-year">May 2024</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://www.mdpi.com/1099-4300/26/3/244" target="_blank" rel="noopener noreferrer" class="pub-title-link">Deceptive Information Retrieval</a></div>
-                        <div class="pub-authors"><strong>S. Vithana</strong> and S. Ulukus</div>
-                        <div class="pub-venue"><em>Entropy</em>, vol. 26(3):244 <span class="pub-year">March 2024</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10172221" target="_blank" rel="noopener noreferrer" class="pub-title-link">Private Read Update Write (PRUW) in Federated Submodel Learning (FSL): Communication Efficient Schemes With and Without Sparsification</a></div>
-                        <div class="pub-authors"><strong>S. Vithana</strong> and S. Ulukus</div>
-                        <div class="pub-venue"><em>IEEE Transactions on Information Theory</em>, vol. 70(2):1320&ndash;1348 <span class="pub-year">February 2024</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10274814" target="_blank" rel="noopener noreferrer" class="pub-title-link">Private Information Retrieval and Its Applications: An Introduction, Open Problems, Future Directions</a></div>
-                        <div class="pub-authors"><strong>S. Vithana</strong>, Z. Wang, and S. Ulukus</div>
-                        <div class="pub-venue"><em>IEEE BITS Magazine</em> <span class="pub-year">2023</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9656116" target="_blank" rel="noopener noreferrer" class="pub-title-link">Semantic Private Information Retrieval</a></div>
-                        <div class="pub-authors"><strong>S. Vithana</strong>, K. Banawan, and S. Ulukus</div>
-                        <div class="pub-venue"><em>IEEE Transactions on Information Theory</em>, vol. 68(4):2635&ndash;2652 <span class="pub-year">April 2022</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://pdfs.semanticscholar.org/1220/14d71557f2e116d0f325502da12b18edaf15.pdf" target="_blank" rel="noopener noreferrer" class="pub-title-link">Adaptive Hierarchical Clustering for Hyperspectral Image Classification: Umbrella Clustering</a></div>
-                        <div class="pub-authors"><strong>S. Vithana</strong>, M. Ekanayake, H. Ekanayake, A. Rathnayake, G. Jayatilaka, V. Herath, R. Godaliyadda, and P. Ekanayake</div>
-                        <div class="pub-venue"><em>Journal of Spectral Imaging</em>, vol. 8(a11) <span class="pub-year">July 2019</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title">Comparison of Two Algorithms for Land Cover Mapping Based on Hyperspectral Imagery</div>
-                        <div class="pub-authors"><strong>S. Vithana</strong>, R. Abeysekara, S. Oorloff, A. Rupasinghe, V. Herath, R. Godaliyadda, and P. Ekanayake</div>
-                        <div class="pub-venue"><em>International Journal on Advances in ICT for Emerging Regions</em>, vol. 11(1) <span class="pub-year">July 2018</span></div>
-                    </div>
                 </div>
-
-                <h2 class="pub-section-title">Conference Papers</h2>
-                <div class="pub-list">
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://openreview.net/pdf?id=R5EBtNE2Y9" target="_blank" rel="noopener noreferrer" class="pub-title-link">HeavyWater and SimplexWater: Watermarking Low-Entropy Text Distributions</a></div>
-                        <div class="pub-authors">D. Tsur, C. Long, C. Verdun, H. Hsu, C.-F. Chen, H. Permuter, <strong>S. Vithana</strong>, and F. P. Calmon</div>
-                        <div class="pub-venue"><em>Conference on Neural Information Processing Systems (NeurIPS)</em> <span class="pub-year">December 2025</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/11195420" target="_blank" rel="noopener noreferrer" class="pub-title-link">Differentially Private Distributed Mean Estimation with Constrained User Correlations</a></div>
-                        <div class="pub-authors"><strong>S. Vithana</strong>, V. Cadambe, F. Calmon, and H. Jeong</div>
-                        <div class="pub-venue"><em>IEEE International Symposium on Information Theory (ISIT)</em> <span class="pub-year">2025</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Jung_Multi-Group_Proportional_Representations_for_Text-to-Image_Models_CVPR_2025_paper.pdf" target="_blank" rel="noopener noreferrer" class="pub-title-link">Multi-Group Proportional Representation for Text-to-Image Models</a></div>
-                        <div class="pub-authors">S. Jung, A. Oesterling, C. M. Verdun, <strong>S. Vithana</strong>, T. Moon, and F. P. Calmon</div>
-                        <div class="pub-venue"><em>Conference on Computer Vision and Pattern Recognition (CVPR)</em> <span class="pub-year">2025</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10992360" target="_blank" rel="noopener noreferrer" class="pub-title-link">Correlated Privacy Mechanisms for Differentially Private Distributed Mean Estimation</a></div>
-                        <div class="pub-authors"><strong>S. Vithana</strong>, V. R. Cadambe, F. P. Calmon, and H. Jeong</div>
-                        <div class="pub-venue"><em>IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)</em> <span class="pub-year">2025</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/d00fcdd0629dabdf515b1e6425a261bb-Paper-Conference.pdf" target="_blank" rel="noopener noreferrer" class="pub-title-link">Multi-Group Proportional Representation</a></div>
-                        <div class="pub-authors">A. Oesterling, C. Verdun, C. Long, A. Glynn, L. Paes, <strong>S. Vithana</strong>, M. Cardone, and F. P. Calmon</div>
-                        <div class="pub-venue"><em>Conference on Neural Information Processing Systems (NeurIPS)</em> <span class="pub-year">December 2024</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title">Measuring Representational Harms in Image Generation with a Multi-Group Proportional Metric</div>
-                        <div class="pub-authors">S. Jung, A. Oesterling, C. M. Verdun, <strong>S. Vithana</strong>, T. Moon, and F. P. Calmon</div>
-                        <div class="pub-venue"><em>NeurIPS Workshop on Algorithmic Fairness Through the Lens of Metrics and Evaluation</em> <span class="pub-year">December 2024</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10619146" target="_blank" rel="noopener noreferrer" class="pub-title-link">Private Approximate Nearest Neighbor Search for Vector Database Querying</a></div>
-                        <div class="pub-authors"><strong>S. Vithana</strong>, M. Cardone, and F. P. Calmon</div>
-                        <div class="pub-venue"><em>IEEE International Symposium on Information Theory (ISIT)</em> <span class="pub-year">July 2024</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10480209" target="_blank" rel="noopener noreferrer" class="pub-title-link">Asymmetric X-Secure T-Private Information Retrieval: More Databases is not Always Better</a></div>
-                        <div class="pub-authors">M. Nomeir, <strong>S. Vithana</strong>, and S. Ulukus</div>
-                        <div class="pub-venue"><em>58th Annual Conference on Information Sciences and Systems (CISS)</em> <span class="pub-year">March 2024</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10464963" target="_blank" rel="noopener noreferrer" class="pub-title-link">Quantum Symmetric Private Information Retrieval with Secure Storage and Eavesdroppers</a></div>
-                        <div class="pub-authors">A. Aytekin, M. Nomeir, <strong>S. Vithana</strong>, and S. Ulukus</div>
-                        <div class="pub-venue"><em>IEEE GLOBECOM Workshops</em> <span class="pub-year">December 2023</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10356221" target="_blank" rel="noopener noreferrer" class="pub-title-link">Private Membership Aggregation</a></div>
-                        <div class="pub-authors">M. Nomeir, <strong>S. Vithana</strong>, and S. Ulukus</div>
-                        <div class="pub-venue"><em>IEEE Military Communications Conference (MILCOM)</em> <span class="pub-year">October 2023</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10206550" target="_blank" rel="noopener noreferrer" class="pub-title-link">Private Read Update Write (PRUW) with Heterogeneous Databases</a></div>
-                        <div class="pub-authors"><strong>S. Vithana</strong> and S. Ulukus</div>
-                        <div class="pub-venue"><em>IEEE International Symposium on Information Theory (ISIT)</em> <span class="pub-year">June 2023</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10279162" target="_blank" rel="noopener noreferrer" class="pub-title-link">Rate-Privacy-Storage Trade-off in Federated Learning with Top \(r\) Sparsification</a> <span class="pub-badge">Best Paper Award</span></div>
-                        <div class="pub-authors"><strong>S. Vithana</strong> and S. Ulukus</div>
-                        <div class="pub-venue"><em>IEEE International Conference on Communications (ICC)</em> <span class="pub-year">May 2023</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10089698" target="_blank" rel="noopener noreferrer" class="pub-title-link">Model Segmentation for Storage Efficient Private Federated Learning with Top \(r\) Sparsification</a></div>
-                        <div class="pub-authors"><strong>S. Vithana</strong> and S. Ulukus</div>
-                        <div class="pub-venue"><em>Conference on Information Sciences and Systems (CISS)</em> <span class="pub-year">March 2023</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9965815" target="_blank" rel="noopener noreferrer" class="pub-title-link">Private Federated Submodel Learning with Sparsification</a></div>
-                        <div class="pub-authors"><strong>S. Vithana</strong> and S. Ulukus</div>
-                        <div class="pub-venue"><em>IEEE Information Theory Workshop (ITW)</em> <span class="pub-year">November 2022</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10051913" target="_blank" rel="noopener noreferrer" class="pub-title-link">Rate Distortion Trade-off in Private Read Update Write in Federated Submodel Learning</a></div>
-                        <div class="pub-authors"><strong>S. Vithana</strong> and S. Ulukus</div>
-                        <div class="pub-venue"><em>Asilomar Conference on Signals, Systems, and Computers</em> <span class="pub-year">October 2022</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9834439" target="_blank" rel="noopener noreferrer" class="pub-title-link">Private Read Update Write (PRUW) with Storage Constrained Databases</a></div>
-                        <div class="pub-authors"><strong>S. Vithana</strong> and S. Ulukus</div>
-                        <div class="pub-venue"><em>IEEE International Symposium on Information Theory (ISIT)</em> <span class="pub-year">June 2022</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9839200" target="_blank" rel="noopener noreferrer" class="pub-title-link">Efficient Private Federated Submodel Learning</a></div>
-                        <div class="pub-authors"><strong>S. Vithana</strong> and S. Ulukus</div>
-                        <div class="pub-venue"><em>IEEE International Conference on Communications (ICC)</em> <span class="pub-year">May 2022</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9517765" target="_blank" rel="noopener noreferrer" class="pub-title-link">Semantic Private Information Retrieval from MDS Coded Databases</a></div>
-                        <div class="pub-authors"><strong>S. Vithana</strong>, K. Banawan, and S. Ulukus</div>
-                        <div class="pub-venue"><em>IEEE International Symposium on Information Theory (ISIT)</em> <span class="pub-year">July 2021</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9348234" target="_blank" rel="noopener noreferrer" class="pub-title-link">Semantic Private Information Retrieval: Effects of Heterogeneous Message Sizes and Popularities</a></div>
-                        <div class="pub-authors"><strong>S. Vithana</strong>, K. Banawan, and S. Ulukus</div>
-                        <div class="pub-venue"><em>IEEE Global Communications Conference (GLOBECOM)</em> <span class="pub-year">December 2020</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/8747025" target="_blank" rel="noopener noreferrer" class="pub-title-link">A Semi-Supervised Algorithm to Map Major Vegetation Zones Using Satellite Hyperspectral Data</a></div>
-                        <div class="pub-authors">M. Ekanayake, H. Ekanayake, A. Rathnayake, <strong>S. Vithana</strong>, V. Herath, R. Godaliyadda, and M. P. B. Ekanayake</div>
-                        <div class="pub-venue"><em>9th Workshop on Hyperspectral Image and Signal Processing: Evolution in Remote Sensing (WHISPERS)</em> <span class="pub-year">September 2018</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/8300371" target="_blank" rel="noopener noreferrer" class="pub-title-link">Spectral-Spatial Hybrid Mechanism for Feature Detection Using Spectral Correlation</a></div>
-                        <div class="pub-authors">S. Oorloff, R. Abeysekara, <strong>S. Vithana</strong>, A. Rupasinghe, V. Herath, R. Godaliyadda, and P. Ekanayake</div>
-                        <div class="pub-venue"><em>IEEE International Conference on Industrial and Information Systems (ICIIS)</em> <span class="pub-year">December 2017</span></div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/8257802" target="_blank" rel="noopener noreferrer" class="pub-title-link">Hyperspectral Imaging Based Land Cover Mapping Using Data Obtained by the Hyperion Sensor</a> <span class="pub-badge">Best Paper Award</span></div>
-                        <div class="pub-authors"><strong>S. Vithana</strong>, R. Abeysekara, S. Oorloff, A. Rupasinghe, V. Herath, R. Godaliyadda, and P. Ekanayake</div>
-                        <div class="pub-venue"><em>Seventeenth International Conference on Advances in ICT for Emerging Regions (IEEE ICTer)</em> <span class="pub-year">September 2017</span></div>
-                    </div>
+                <div class="card reveal">
+                    <div class="card-top"><h4>Covert agentic communication</h4><span class="tag tag-new">New</span></div>
+                    <p>Two agents that share a key can exploit the same mechanism to talk secretly, in text that is provably indistinguishable from ordinary output. The sender sees every token the receiver sees, so this is a channel with <em>noiseless feedback</em>. Our scheme, Burnashev Adaptive Posterior Matching (BAM), chooses each embedded symbol from the receiver's current belief and stops once the receiver is confident.</p>
+                    <ul class="paper-links">
+                        <li><a href="https://arxiv.org/abs/2609.24994" target="_blank" rel="noopener noreferrer"><i class="far fa-file-pdf"></i> Feedback Coding Enables Inference-Time Covert Agentic Communication</a></li>
+                        <li><a href="https://infotheorylab.github.io/Covert_Chess/" target="_blank" rel="noopener noreferrer"><i class="fas fa-chess-knight"></i> Interactive demo: can AI agents secretly play chess?</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </article>
 
-        <!-- Teaching -->
-        <div class="teaching" id="teaching">
-            <div class="font teaching-wrap">
-                <h1>Teaching</h1>
-
-                <h2 class="teaching-section-title">Primary Instructor</h2>
-                <ul class="teaching-list">
-                    <li>
-                        <span class="course-code">ES 156</span>
-                        <span class="course-name">Signals and Communications</span>
-                        <span class="course-term">Harvard &middot; Spring 2026</span>
-                    </li>
-                </ul>
-
-                <h2 class="teaching-section-title">Teaching Fellow</h2>
-                <ul class="teaching-list">
-                    <li>
-                        <span class="course-code">ES 250</span>
-                        <span class="course-name">Information Theory</span>
-                        <span class="course-term">Harvard &middot; Fall 2024</span>
-                    </li>
-                </ul>
-
-                <h2 class="teaching-section-title">Teaching Assistant</h2>
-                <ul class="teaching-list">
-                    <li>
-                        <span class="course-code">ENEE 322</span>
-                        <span class="course-name">Signals and Systems</span>
-                        <span class="course-term">UMD &middot; Fall 2020</span>
-                    </li>
-                    <li>
-                        <span class="course-code">ENEE 439M</span>
-                        <span class="course-name">Introduction to Machine Learning</span>
-                        <span class="course-term">UMD &middot; Spring 2020</span>
-                    </li>
-                    <li>
-                        <span class="course-code">ENEE 630</span>
-                        <span class="course-name">Advanced Digital Signal Processing</span>
-                        <span class="course-term">UMD &middot; Fall 2019</span>
-                    </li>
-                    <li>
-                        <span class="course-code">ENEE 324</span>
-                        <span class="course-name">Engineering Probability</span>
-                        <span class="course-term">UMD &middot; Spring 2019</span>
-                    </li>
-                    <li>
-                        <span class="course-code">ENEE 425</span>
-                        <span class="course-name">Digital Signal Processing</span>
-                        <span class="course-term">UMD &middot; Fall 2018</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-<!--
-
-        <div class="mystory" id="story">
-            <div class="font">
-                <h1> My Story</h1>
-                <br>
-                <p>
-                    I grew up in Sri Lanka, a beautiful island often called the "Pearl of the Indian Ocean." My love for math and science began at a young age and eventually led me to pursue a bachelor’s degree in civil engineering at the University of Peradeniya. 
-                    During my time there, I discovered a passion for aerodynamics, particularly through my final-year research project on wind loads on tall buildings, guided by Prof. Kushan Wijesundara. Inspired by binge-watching Mayday: Air Crash Investigations, I developed a deep interest in aeronautics and decided to pursue higher studies in the United States.
-                    <br><br>
-                    In 2018, I joined the Computational Fluid Dynamics (CFD) Research Lab at the University of Maryland, where I was fortunate to work under the mentorship of Prof. James Baeder. 
-                    After completing my PhD in 2023, I began my professional journey with Maglev Aero, a cutting-edge company developing electric propulsion systems powered by magnetic levitation.
-                    <br><br></ber>
-                    During my years in Maryland, I also embraced photography, capturing memories as I explored much of the U.S. with friends. Here are some of the pictures from those travels—each one holds a cherished memory that I will treasure forever.        
-                </p>
-                
-               
-            </div>
-            
-            
-            <div class="figures-crc"> 
-                <div class="column1">
-                    <img src="grinnel.jpg" style="width:100%">
-                    <p> <br> Upper Grinnell Lake, Montana</p>
+        <!-- ---------- 3. Privacy ---------- -->
+        <article class="thrust" id="thrust-privacy" style="--c: var(--c-priv); --c-soft: var(--c-priv-soft)">
+            <header class="thrust-head">
+                <span class="thrust-num">03</span>
+                <div>
+                    <h3><i class="fas fa-lock"></i> Data Privacy</h3>
+                    <p class="thrust-q">How can AI learn from sensitive data and answer sensitive queries without leaking them?</p>
                 </div>
-                <div class="column2">
-                    <img src="outerbanks2.jpeg" style="width:100%">
-                    <p> <br>  Outer Banks, North Carolina </p>
-                    <br>
-                    <img src="sealions2.jpeg" style="width:100%">
-                    <p> <br>  Seward, Alaska  </p>
-                </div>            
-                <div class="column2">
-                    <img src="lava.jpeg" style="width:100%">
-                    <p> <br> Kīlauea volcano, Hawaii</p>
-                    <br>
-                    <img src="liberty.jpeg" style="width:100%">
-                    <p> <br> Statue of Liberty</p>
+            </header>
+            <p class="thrust-intro">
+                Privacy matters at two stages. <b>Training:</b> private synthetic data generation and private federated learning. <b>Inference:</b> private retrieval-augmented generation, keeping user queries hidden from external databases.
+            </p>
+
+            <p class="subhead">Training</p>
+            <div class="cards">
+                <div class="card reveal">
+                    <div class="card-top"><h4>PubMix</h4><span class="tag">ICML 2026</span></div>
+                    <p>Standard DP mechanisms add the same Gaussian or Laplace noise no matter what is already public. PubMix is a <em>domain-aware</em> mechanism: public data from the same domain shows which directions to perturb in, and the optimal noise turns out to be a floor-raised version of the public distribution. PubMix also uses the randomness of sampling the synthetic data as a source of privacy, which significantly improves the privacy-utility trade-off.</p>
+                    <ul class="paper-links">
+                        <li><a href="pubmix.pdf" target="_blank" rel="noopener noreferrer"><i class="far fa-file-pdf"></i> Optimal Domain-Aware Privacy Mechanisms for Synthetic Data Generation</a></li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <div class="card-top"><h4>CorDP-DME</h4><span class="tag">SaTML 2025 · ISIT 2025</span></div>
+                    <p>Differentially private mean estimation for federated learning. Local DP is lightweight but inaccurate, with MSE \(O(1/n)\). Central DP reaches \(O(1/n^2)\) but needs a trusted server. Using optimally <em>correlated</em> noise, CorDP-DME needs no trusted party, always beats LDP, costs far less than secure aggregation, and keeps its guarantees under dropouts and collusion.</p>
+                    <ul class="paper-links">
+                        <li><a href="https://ieeexplore.ieee.org/abstract/document/10992360" target="_blank" rel="noopener noreferrer"><i class="far fa-file-pdf"></i> Correlated Privacy Mechanisms for Differentially Private Distributed Mean Estimation</a></li>
+                        <li><a href="https://ieeexplore.ieee.org/abstract/document/11195420" target="_blank" rel="noopener noreferrer"><i class="far fa-file-pdf"></i> DP Distributed Mean Estimation with Constrained User Correlations</a></li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <div class="card-top"><h4>Private Read-Update-Write</h4><span class="tag tag-award"><i class="fas fa-trophy"></i> Best Paper</span></div>
+                    <p>An information-theoretic framework for reading and writing parts of a model with <em>perfect</em> privacy and accuracy. It hides both which parameters a user touches and the update values, as needed in federated submodel learning and top-\(r\) sparsification. The codes are built from Lagrange polynomials and Cauchy–Vandermonde matrices, and their communication cost is asymptotically only 2× that of non-private FL.</p>
+                    <ul class="paper-links">
+                        <li><a href="https://ieeexplore.ieee.org/abstract/document/10172221" target="_blank" rel="noopener noreferrer"><i class="far fa-file-pdf"></i> PRUW in Federated Submodel Learning (IEEE Trans. IT)</a></li>
+                        <li><a href="https://ieeexplore.ieee.org/abstract/document/10354031" target="_blank" rel="noopener noreferrer"><i class="far fa-file-pdf"></i> PRUW with Controllable Information Leakage (IEEE Trans. IT)</a></li>
+                        <li><a href="https://ieeexplore.ieee.org/abstract/document/10521588" target="_blank" rel="noopener noreferrer"><i class="far fa-file-pdf"></i> Private FSL with Storage Constrained Databases (IEEE Trans. IT)</a></li>
+                    </ul>
                 </div>
             </div>
-        
+
+            <p class="subhead">Inference</p>
+            <div class="cards">
+                <div class="card reveal">
+                    <div class="card-top"><h4>Private nearest-neighbor search for RAG</h4><span class="tag">ISIT 2024</span></div>
+                    <p>RAG sends a user's query embedding to an external vector database, which can leak sensitive information. Using hierarchical Reed–Solomon codes over \(N\) non-colluding databases, our scheme finds the nearest neighbor with perfect information-theoretic query privacy and no loss in accuracy. Its communication cost is \(O(N^2 M^{1/(N-1)})\), compared with \(O(\sqrt{M}\log M)\) for competing protocols.</p>
+                    <figure class="fig">
+                        <img src="figs/rag.png" alt="RAG pipeline: query embedding matched to nearest database vector" loading="lazy">
+                        <figcaption>RAG pipeline: the query embedding is matched to the nearest database vectors, and those entries are added to the LLM's context.</figcaption>
+                    </figure>
+                    <ul class="paper-links">
+                        <li><a href="https://ieeexplore.ieee.org/abstract/document/10619146" target="_blank" rel="noopener noreferrer"><i class="far fa-file-pdf"></i> Private Approximate Nearest Neighbor Search for Vector Database Querying</a></li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <div class="card-top"><h4>Semantic private information retrieval</h4><span class="tag">IEEE Trans. IT</span></div>
+                    <p>Classical private information retrieval assumes all files have the same length and are equally popular. Semantic PIR drops those assumptions. We derived its capacity, including for MDS-coded and colluding databases, and showed that it always outperforms classical PIR.</p>
+                    <ul class="paper-links">
+                        <li><a href="https://ieeexplore.ieee.org/abstract/document/9656116" target="_blank" rel="noopener noreferrer"><i class="far fa-file-pdf"></i> Semantic Private Information Retrieval</a></li>
+                        <li><a href="https://ieeexplore.ieee.org/abstract/document/10274814" target="_blank" rel="noopener noreferrer"><i class="far fa-file-pdf"></i> PIR and Its Applications: An Introduction, Open Problems, Future Directions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- ---------- 4. Evaluation ---------- -->
+        <article class="thrust" id="thrust-evaluation" style="--c: var(--c-eval); --c-soft: var(--c-eval-soft)">
+            <header class="thrust-head">
+                <span class="thrust-num">04</span>
+                <div>
+                    <h3><i class="fas fa-magnifying-glass-chart"></i> AI Evaluation <span class="tag tag-ongoing">Ongoing</span></h3>
+                    <p class="thrust-q">How do we find where a model fails when we don't know where to look?</p>
+                </div>
+            </header>
+            <p class="thrust-intro">
+                Benchmarks and leaderboards show how a model does where we already chose to look. They miss <b>silent regressions</b> after updates, <b>weaknesses hidden by averages</b>, and <b>behaviors with no ground truth</b>, such as tone, refusal or advice. We treat evaluation as an <em>adaptive search over descriptors</em>. Descriptors are natural-language classes of prompts, organized in a tree that grows <em>deeper</em> where the evidence points and <em>wider</em> into regions no existing dataset covers.
+            </p>
+            <div class="eval-questions">
+                <div class="eq reveal"><span>1</span><b>Representation</b><p>How should the space of prompts be organized so that it can be searched?</p></div>
+                <div class="eq reveal"><span>2</span><b>Exploration</b><p>How do we reach regions no dataset covers, and know how much we've explored?</p></div>
+                <div class="eq reveal"><span>3</span><b>Efficient measurement</b><p>On a limited budget, which classes do we test, and when do we split them?</p></div>
+                <div class="eq reveal"><span>4</span><b>Validity</b><p>Do generated prompts actually show the behavior their descriptor names?</p></div>
+            </div>
+            <p class="thrust-tools">Tools: Bayesian hierarchical models · multi-armed bandits · active learning · MDP planning</p>
+        </article>
+
+        <!-- ---------- 5. Responsible ---------- -->
+        <article class="thrust" id="thrust-responsible" style="--c: var(--c-resp); --c-soft: var(--c-resp-soft)">
+            <header class="thrust-head">
+                <span class="thrust-num">05</span>
+                <div>
+                    <h3><i class="fas fa-people-group"></i> Socially Responsible AI</h3>
+                    <p class="thrust-q">How do we measure and fix representational harms across intersecting identities?</p>
+                </div>
+            </header>
+            <p class="thrust-intro">
+                Generative models misrepresent social and historical reality when they miss the context of a query. Most fairness work looks at single attributes such as race <em>or</em> gender. Real identities are intersectional.
+            </p>
+            <div class="cards">
+                <div class="card reveal">
+                    <div class="card-top"><h4>Multi-Group Proportional Representation</h4><span class="tag">NeurIPS 2024 · CVPR 2025</span></div>
+                    <p>MPR is a theoretically grounded metric for <em>intersectional</em> representation. It compares retrieved or generated samples with a proportionally representative population using maximum mean discrepancy over a rich class of statistics. Building on MPR, the MOPR retrieval algorithm improves both accuracy and representation, and MPR-based fine-tuning closes representation gaps in text-to-image diffusion models while preserving image quality.</p>
+                    <figure class="fig fig-mid">
+                        <img src="figs/mpr-nurses.jpg" alt="Stable Diffusion images for the prompt Image of a nurse, before and after MPR fine-tuning" loading="lazy">
+                        <figcaption>Stable Diffusion outputs for “Image of a nurse.” Top: original model. Bottom: fine-tuned with MPR.</figcaption>
+                    </figure>
+                    <ul class="paper-links">
+                        <li><a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/d00fcdd0629dabdf515b1e6425a261bb-Paper-Conference.pdf" target="_blank" rel="noopener noreferrer"><i class="far fa-file-pdf"></i> Multi-Group Proportional Representation in Retrieval</a></li>
+                        <li><a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Jung_Multi-Group_Proportional_Representations_for_Text-to-Image_Models_CVPR_2025_paper.pdf" target="_blank" rel="noopener noreferrer"><i class="far fa-file-pdf"></i> Multi-Group Proportional Representations for Text-to-Image Models</a></li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- ============ PUBLICATIONS ============ -->
+<section class="publications" id="pubs">
+    <div class="wrap">
+        <p class="kicker">Publications</p>
+        <h2 class="section-title">Papers.</h2>
+        <p class="section-lede">See <a href="https://scholar.google.com/citations?user=_hSfZbMAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a> for the most up-to-date list. * denotes equal contribution.</p>
+
+        <div class="filters" role="group" aria-label="Filter publications by thrust">
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="rel" style="--c: var(--c-rel)">Reliability</button>
+            <button class="chip" data-filter="acc" style="--c: var(--c-acc)">Accountability</button>
+            <button class="chip" data-filter="priv" style="--c: var(--c-priv)">Privacy</button>
+            <button class="chip" data-filter="resp" style="--c: var(--c-resp)">Responsible AI</button>
+            <button class="chip" data-filter="sp" style="--c: var(--muted)">Signal processing</button>
         </div>
 
-        -->
-    
-    
+        <h3 class="pub-group">Preprints</h3>
+        <ol class="pub-list">
+            <li class="pub" data-t="rel">
+                <div class="pub-title"><a href="https://arxiv.org/abs/2610.30076" target="_blank" rel="noopener noreferrer">Circuits of LLM Classifiers</a></div>
+                <div class="pub-authors">H. Khalaf*, <b>S. Vithana*</b>, K. Talreja, H. Jeong, V. R. Cadambe, and F. P. Calmon</div>
+                <div class="pub-venue"><em>arXiv:2610.30076</em> <span class="yr">2026</span></div>
+            </li>
+            <li class="pub" data-t="acc">
+                <div class="pub-title"><a href="https://arxiv.org/abs/2609.24994" target="_blank" rel="noopener noreferrer">Feedback Coding Enables Inference-Time Covert Agentic Communication</a> <a class="pub-extra" href="https://infotheorylab.github.io/Covert_Chess/" target="_blank" rel="noopener noreferrer"><i class="fas fa-chess-knight"></i> demo</a></div>
+                <div class="pub-authors">S. Guo, <b>S. Vithana</b>, A. Gilani, L. Sankar, O. Kosut, and F. P. Calmon</div>
+                <div class="pub-venue"><em>arXiv:2609.24994</em> <span class="yr">2026</span></div>
+            </li>
+        </ol>
 
-   
-    </body>
+        <h3 class="pub-group">Conference Papers</h3>
+        <ol class="pub-list">
+            <li class="pub" data-t="acc">
+                <div class="pub-title"><a href="https://arxiv.org/abs/2602.07235" target="_blank" rel="noopener noreferrer">ArcMark: Distortion-Free Multi-Byte LLM Watermark via Optimal Transport</a></div>
+                <div class="pub-authors">A. Gilani, <b>S. Vithana</b>, C. X. Long, O. Kosut, L. Sankar, and F. P. Calmon</div>
+                <div class="pub-venue"><em>Conference on Neural Information Processing Systems (NeurIPS)</em> <span class="yr">2026</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="pubmix.pdf" target="_blank" rel="noopener noreferrer">Optimal Domain-Aware Privacy Mechanisms for Synthetic Data Generation</a></div>
+                <div class="pub-authors"><b>S. Vithana</b>, S. Jung, H. Hu, V. R. Cadambe, F. P. Calmon, and H. Jeong</div>
+                <div class="pub-venue"><em>International Conference on Machine Learning (ICML)</em> <span class="yr">2026</span></div>
+            </li>
+            <li class="pub" data-t="acc">
+                <div class="pub-title"><a href="https://openreview.net/pdf?id=R5EBtNE2Y9" target="_blank" rel="noopener noreferrer">HeavyWater and SimplexWater: Watermarking Low-Entropy Text Distributions</a></div>
+                <div class="pub-authors">D. Tsur, C. Long, C. Verdun, H. Hsu, C.-F. Chen, H. Permuter, <b>S. Vithana*</b>, and F. P. Calmon*</div>
+                <div class="pub-venue"><em>Conference on Neural Information Processing Systems (NeurIPS)</em> <span class="yr">2025</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/11195420" target="_blank" rel="noopener noreferrer">Differentially Private Distributed Mean Estimation with Constrained User Correlations</a></div>
+                <div class="pub-authors"><b>S. Vithana</b>, V. R. Cadambe, F. P. Calmon, and H. Jeong</div>
+                <div class="pub-venue"><em>IEEE International Symposium on Information Theory (ISIT)</em> <span class="yr">2025</span></div>
+            </li>
+            <li class="pub" data-t="resp">
+                <div class="pub-title"><a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Jung_Multi-Group_Proportional_Representations_for_Text-to-Image_Models_CVPR_2025_paper.pdf" target="_blank" rel="noopener noreferrer">Multi-Group Proportional Representations for Text-to-Image Models</a></div>
+                <div class="pub-authors">S. Jung, A. Oesterling, C. M. Verdun, <b>S. Vithana</b>, T. Moon, and F. P. Calmon</div>
+                <div class="pub-venue"><em>Conference on Computer Vision and Pattern Recognition (CVPR)</em> <span class="yr">2025</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10992360" target="_blank" rel="noopener noreferrer">Correlated Privacy Mechanisms for Differentially Private Distributed Mean Estimation</a></div>
+                <div class="pub-authors"><b>S. Vithana</b>, V. R. Cadambe, F. P. Calmon, and H. Jeong</div>
+                <div class="pub-venue"><em>IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)</em> <span class="yr">2025</span></div>
+            </li>
+            <li class="pub" data-t="resp">
+                <div class="pub-title"><a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/d00fcdd0629dabdf515b1e6425a261bb-Paper-Conference.pdf" target="_blank" rel="noopener noreferrer">Multi-Group Proportional Representation</a></div>
+                <div class="pub-authors">A. Oesterling, C. M. Verdun, C. X. Long, A. Glynn, L. M. Paes, <b>S. Vithana</b>, M. Cardone, and F. P. Calmon</div>
+                <div class="pub-venue"><em>Conference on Neural Information Processing Systems (NeurIPS)</em> <span class="yr">2024</span></div>
+            </li>
+            <li class="pub" data-t="resp">
+                <div class="pub-title">Measuring Representational Harms in Image Generation with a Multi-Group Proportional Metric</div>
+                <div class="pub-authors">S. Jung, A. Oesterling, C. M. Verdun, <b>S. Vithana</b>, T. Moon, and F. P. Calmon</div>
+                <div class="pub-venue"><em>NeurIPS Workshop on Algorithmic Fairness Through the Lens of Metrics and Evaluation</em> <span class="yr">2024</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10619146" target="_blank" rel="noopener noreferrer">Private Approximate Nearest Neighbor Search for Vector Database Querying</a></div>
+                <div class="pub-authors"><b>S. Vithana</b>, M. Cardone, and F. P. Calmon</div>
+                <div class="pub-venue"><em>IEEE International Symposium on Information Theory (ISIT)</em> <span class="yr">2024</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10480209" target="_blank" rel="noopener noreferrer">Asymmetric X-Secure T-Private Information Retrieval: More Databases is not Always Better</a></div>
+                <div class="pub-authors">M. Nomeir, <b>S. Vithana</b>, and S. Ulukus</div>
+                <div class="pub-venue"><em>Conference on Information Sciences and Systems (CISS)</em> <span class="yr">2024</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10464963" target="_blank" rel="noopener noreferrer">Quantum Symmetric Private Information Retrieval with Secure Storage and Eavesdroppers</a></div>
+                <div class="pub-authors">A. Aytekin, M. Nomeir, <b>S. Vithana</b>, and S. Ulukus</div>
+                <div class="pub-venue"><em>IEEE GLOBECOM Workshops</em> <span class="yr">2023</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10356221" target="_blank" rel="noopener noreferrer">Private Membership Aggregation</a></div>
+                <div class="pub-authors">M. Nomeir, <b>S. Vithana</b>, and S. Ulukus</div>
+                <div class="pub-venue"><em>IEEE Military Communications Conference (MILCOM)</em> <span class="yr">2023</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10206550" target="_blank" rel="noopener noreferrer">Private Read Update Write (PRUW) with Heterogeneous Databases</a></div>
+                <div class="pub-authors"><b>S. Vithana</b> and S. Ulukus</div>
+                <div class="pub-venue"><em>IEEE International Symposium on Information Theory (ISIT)</em> <span class="yr">2023</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10279162" target="_blank" rel="noopener noreferrer">Rate-Privacy-Storage Trade-off in Federated Learning with Top \(r\) Sparsification</a> <span class="badge"><i class="fas fa-trophy"></i> Best Paper Award</span></div>
+                <div class="pub-authors"><b>S. Vithana</b> and S. Ulukus</div>
+                <div class="pub-venue"><em>IEEE International Conference on Communications (ICC)</em> <span class="yr">2023</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10089698" target="_blank" rel="noopener noreferrer">Model Segmentation for Storage Efficient Private Federated Learning with Top \(r\) Sparsification</a></div>
+                <div class="pub-authors"><b>S. Vithana</b> and S. Ulukus</div>
+                <div class="pub-venue"><em>Conference on Information Sciences and Systems (CISS)</em> <span class="yr">2023</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9965815" target="_blank" rel="noopener noreferrer">Private Federated Submodel Learning with Sparsification</a></div>
+                <div class="pub-authors"><b>S. Vithana</b> and S. Ulukus</div>
+                <div class="pub-venue"><em>IEEE Information Theory Workshop (ITW)</em> <span class="yr">2022</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10051913" target="_blank" rel="noopener noreferrer">Rate Distortion Trade-off in Private Read Update Write in Federated Submodel Learning</a></div>
+                <div class="pub-authors"><b>S. Vithana</b> and S. Ulukus</div>
+                <div class="pub-venue"><em>Asilomar Conference on Signals, Systems, and Computers</em> <span class="yr">2022</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9834439" target="_blank" rel="noopener noreferrer">Private Read Update Write (PRUW) with Storage Constrained Databases</a></div>
+                <div class="pub-authors"><b>S. Vithana</b> and S. Ulukus</div>
+                <div class="pub-venue"><em>IEEE International Symposium on Information Theory (ISIT)</em> <span class="yr">2022</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9839200" target="_blank" rel="noopener noreferrer">Efficient Private Federated Submodel Learning</a></div>
+                <div class="pub-authors"><b>S. Vithana</b> and S. Ulukus</div>
+                <div class="pub-venue"><em>IEEE International Conference on Communications (ICC)</em> <span class="yr">2022</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9517765" target="_blank" rel="noopener noreferrer">Semantic Private Information Retrieval from MDS Coded Databases</a></div>
+                <div class="pub-authors"><b>S. Vithana</b>, K. Banawan, and S. Ulukus</div>
+                <div class="pub-venue"><em>IEEE International Symposium on Information Theory (ISIT)</em> <span class="yr">2021</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9348234" target="_blank" rel="noopener noreferrer">Semantic Private Information Retrieval: Effects of Heterogeneous Message Sizes and Popularities</a></div>
+                <div class="pub-authors"><b>S. Vithana</b>, K. Banawan, and S. Ulukus</div>
+                <div class="pub-venue"><em>IEEE Global Communications Conference (GLOBECOM)</em> <span class="yr">2020</span></div>
+            </li>
+            <li class="pub" data-t="sp">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/8747025" target="_blank" rel="noopener noreferrer">A Semi-Supervised Algorithm to Map Major Vegetation Zones Using Satellite Hyperspectral Data</a></div>
+                <div class="pub-authors">M. Ekanayake, H. Ekanayake, A. Rathnayake, <b>S. Vithana</b>, V. Herath, R. Godaliyadda, and M. P. B. Ekanayake</div>
+                <div class="pub-venue"><em>Workshop on Hyperspectral Image and Signal Processing (WHISPERS)</em> <span class="yr">2018</span></div>
+            </li>
+            <li class="pub" data-t="sp">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/8300371" target="_blank" rel="noopener noreferrer">Spectral-Spatial Hybrid Mechanism for Feature Detection Using Spectral Correlation</a></div>
+                <div class="pub-authors">S. Oorloff, R. Abeysekara, <b>S. Vithana</b>, A. Rupasinghe, V. Herath, R. Godaliyadda, and P. Ekanayake</div>
+                <div class="pub-venue"><em>IEEE International Conference on Industrial and Information Systems (ICIIS)</em> <span class="yr">2017</span></div>
+            </li>
+            <li class="pub" data-t="sp">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/8257802" target="_blank" rel="noopener noreferrer">Hyperspectral Imaging Based Land Cover Mapping Using Data Obtained by the Hyperion Sensor</a> <span class="badge"><i class="fas fa-trophy"></i> Best Paper Award</span></div>
+                <div class="pub-authors"><b>S. Vithana</b>, R. Abeysekara, S. Oorloff, A. Rupasinghe, V. Herath, R. Godaliyadda, and P. Ekanayake</div>
+                <div class="pub-venue"><em>International Conference on Advances in ICT for Emerging Regions (IEEE ICTer)</em> <span class="yr">2017</span></div>
+            </li>
+        </ol>
+
+        <h3 class="pub-group">Journal Papers</h3>
+        <ol class="pub-list">
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10929727" target="_blank" rel="noopener noreferrer">Quantum X-Secure E-Eavesdropped T-Colluding Symmetric Private Information Retrieval</a></div>
+                <div class="pub-authors">A. Aytekin, M. Nomeir, <b>S. Vithana</b>, and S. Ulukus</div>
+                <div class="pub-venue"><em>IEEE Transactions on Information Theory</em>, 71(5):3974–3988 <span class="yr">2025</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10521588" target="_blank" rel="noopener noreferrer">Information-Theoretically Private Federated Submodel Learning with Storage Constrained Databases</a></div>
+                <div class="pub-authors"><b>S. Vithana</b> and S. Ulukus</div>
+                <div class="pub-venue"><em>IEEE Transactions on Information Theory</em>, 70(8):6041–6059 <span class="yr">2024</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10354031" target="_blank" rel="noopener noreferrer">Private Read-Update-Write with Controllable Information Leakage for Storage-Efficient Federated Learning with Top \(r\) Sparsification</a></div>
+                <div class="pub-authors"><b>S. Vithana</b> and S. Ulukus</div>
+                <div class="pub-venue"><em>IEEE Transactions on Information Theory</em>, 70(5):3669–3692 <span class="yr">2024</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://www.mdpi.com/1099-4300/26/3/244" target="_blank" rel="noopener noreferrer">Deceptive Information Retrieval</a></div>
+                <div class="pub-authors"><b>S. Vithana</b> and S. Ulukus</div>
+                <div class="pub-venue"><em>Entropy</em>, 26(3):244 <span class="yr">2024</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10172221" target="_blank" rel="noopener noreferrer">Private Read Update Write (PRUW) in Federated Submodel Learning (FSL): Communication Efficient Schemes With and Without Sparsification</a></div>
+                <div class="pub-authors"><b>S. Vithana</b> and S. Ulukus</div>
+                <div class="pub-venue"><em>IEEE Transactions on Information Theory</em>, 70(2):1320–1348 <span class="yr">2024</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10274814" target="_blank" rel="noopener noreferrer">Private Information Retrieval and Its Applications: An Introduction, Open Problems, Future Directions</a></div>
+                <div class="pub-authors"><b>S. Vithana</b>, Z. Wang, and S. Ulukus</div>
+                <div class="pub-venue"><em>IEEE BITS Magazine</em> <span class="yr">2023</span></div>
+            </li>
+            <li class="pub" data-t="priv">
+                <div class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/9656116" target="_blank" rel="noopener noreferrer">Semantic Private Information Retrieval</a></div>
+                <div class="pub-authors"><b>S. Vithana</b>, K. Banawan, and S. Ulukus</div>
+                <div class="pub-venue"><em>IEEE Transactions on Information Theory</em>, 68(4):2635–2652 <span class="yr">2022</span></div>
+            </li>
+            <li class="pub" data-t="sp">
+                <div class="pub-title"><a href="https://pdfs.semanticscholar.org/1220/14d71557f2e116d0f325502da12b18edaf15.pdf" target="_blank" rel="noopener noreferrer">Adaptive Hierarchical Clustering for Hyperspectral Image Classification: Umbrella Clustering</a></div>
+                <div class="pub-authors"><b>S. Vithana</b>, M. Ekanayake, H. Ekanayake, A. Rathnayake, G. Jayatilaka, V. Herath, R. Godaliyadda, and P. Ekanayake</div>
+                <div class="pub-venue"><em>Journal of Spectral Imaging</em>, 8(a11) <span class="yr">2019</span></div>
+            </li>
+            <li class="pub" data-t="sp">
+                <div class="pub-title">Mapping Ilmenite Deposit in Pulmudai, Sri Lanka Using a Hyperspectral Imaging-Based Surface Mineral Mapping Method</div>
+                <div class="pub-authors">M. Ekanayake, <b>S. Vithana</b>, H. Ekanayake, A. Rathnayake, R. Abeysekara, S. Oorloff, V. Herath, R. Godaliyadda, P. Ekanayake, and A. Senaratne</div>
+                <div class="pub-venue"><em>Journal of the National Science Foundation of Sri Lanka</em> <span class="yr">2019</span></div>
+            </li>
+            <li class="pub" data-t="sp">
+                <div class="pub-title">Comparison of Two Algorithms for Land Cover Mapping Based on Hyperspectral Imagery</div>
+                <div class="pub-authors"><b>S. Vithana</b>, R. Abeysekara, S. Oorloff, A. Rupasinghe, V. Herath, R. Godaliyadda, and P. Ekanayake</div>
+                <div class="pub-venue"><em>International Journal on Advances in ICT for Emerging Regions</em>, 11(1) <span class="yr">2018</span></div>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<!-- ============ TEACHING ============ -->
+<section class="teaching" id="teaching">
+    <div class="wrap">
+        <p class="kicker">Teaching</p>
+        <h2 class="section-title">In the classroom.</h2>
+        <div class="teach-grid">
+            <div class="teach-col">
+                <h4>Primary Instructor</h4>
+                <div class="course featured"><span class="code">ES 156</span><span class="cname">Signals and Communications</span><span class="term">Harvard · Spring 2026</span></div>
+                <h4>Teaching Fellow</h4>
+                <div class="course"><span class="code">ES 250</span><span class="cname">Information Theory</span><span class="term">Harvard · Fall 2024</span></div>
+            </div>
+            <div class="teach-col">
+                <h4>Teaching Assistant</h4>
+                <div class="course"><span class="code">ENEE 322</span><span class="cname">Signals and Systems</span><span class="term">UMD · Fall 2020</span></div>
+                <div class="course"><span class="code">ENEE 439M</span><span class="cname">Introduction to Machine Learning</span><span class="term">UMD · Spring 2020</span></div>
+                <div class="course"><span class="code">ENEE 630</span><span class="cname">Advanced Digital Signal Processing</span><span class="term">UMD · Fall 2019</span></div>
+                <div class="course"><span class="code">ENEE 324</span><span class="cname">Engineering Probability</span><span class="term">UMD · Spring 2019</span></div>
+                <div class="course"><span class="code">ENEE 425</span><span class="cname">Digital Signal Processing</span><span class="term">UMD · Fall 2018</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="wrap footer-inner">
+        <p>Sajani Vithana · Harvard John A. Paulson School of Engineering and Applied Sciences</p>
+        <p class="footer-links">
+            <a href="mailto:sajani@seas.harvard.edu"><i class="fas fa-envelope"></i></a>
+            <a href="https://scholar.google.com/citations?user=_hSfZbMAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+            <a href="https://www.linkedin.com/in/sajanivithana/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </p>
+    </div>
+</footer>
+
+</body>
 </html>
-
