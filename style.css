@@ -244,7 +244,7 @@ a.hl-card:hover { transform: translateY(-3px); text-decoration: none; border-col
 .t-math { font-family: var(--serif); font-style: italic; color: var(--accent); font-size: 1.05rem; }
 
 /* research */
-.research { padding: 96px 0 40px; }
+.research { padding: 96px 0 40px; border-top: 1px solid var(--line); }
 .thrust {
     position: relative; margin-bottom: 56px; padding: 32px 32px 28px;
     background: var(--surface); border: 1px solid var(--line); border-radius: 20px;

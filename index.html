@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=4">
     <script>
         document.documentElement.classList.add('js');
         window.MathJax = { tex: { inlineMath: [['\\(', '\\)']] }, svg: { fontCache: 'global' } };
     </script>
     <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
-    <script defer src="script.js?v=3"></script>
+    <script defer src="script.js?v=4"></script>
 </head>
 <body>
 
@@ -26,7 +26,6 @@
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#approach">Approach</a></li>
             <li><a href="#research">Research</a></li>
             <li><a href="#pubs">Publications</a></li>
             <li><a href="#teaching">Teaching</a></li>
@@ -66,40 +65,7 @@
             <div class="vision-panel" id="vision-panel" aria-live="polite"></div>
         </div>
     </div>
-    <a href="#approach" class="scroll-cue" aria-label="Scroll down"><i class="fas fa-chevron-down"></i></a>
-</section>
-
-<!-- ============ APPROACH ============ -->
-<section class="approach" id="approach">
-    <div class="wrap">
-        <p class="kicker">The approach</p>
-        <h2 class="section-title">Rigor over heuristics.</h2>
-        <p class="section-lede">
-            The usual way to make AI more reliable is to scale up data and models and check the results empirically. That approach gives no provable guarantees. Many reliable and trustworthy-AI problems are information-theoretic and statistical problems at the core. I analyze what is mathematically <em>possible</em> and what is <em>impossible</em>, and let those limits guide algorithm design.
-        </p>
-        <div class="translate-grid">
-            <div class="translate reveal">
-                <span class="t-plain">Detecting a watermark</span>
-                <span class="t-arrow"><i class="fas fa-arrow-right-long"></i></span>
-                <span class="t-math">is a hypothesis test</span>
-            </div>
-            <div class="translate reveal">
-                <span class="t-plain">Getting reliable answers from unreliable models</span>
-                <span class="t-arrow"><i class="fas fa-arrow-right-long"></i></span>
-                <span class="t-math">is a sequential decision problem</span>
-            </div>
-            <div class="translate reveal">
-                <span class="t-plain">Privacy</span>
-                <span class="t-arrow"><i class="fas fa-arrow-right-long"></i></span>
-                <span class="t-math">is a bound on information leakage</span>
-            </div>
-            <div class="translate reveal">
-                <span class="t-plain">Evaluating a model</span>
-                <span class="t-arrow"><i class="fas fa-arrow-right-long"></i></span>
-                <span class="t-math">is a search for failures with few, noisy tests</span>
-            </div>
-        </div>
-    </div>
+    <a href="#research" class="scroll-cue" aria-label="Scroll down"><i class="fas fa-chevron-down"></i></a>
 </section>
 
 <!-- ============ RESEARCH ============ -->
